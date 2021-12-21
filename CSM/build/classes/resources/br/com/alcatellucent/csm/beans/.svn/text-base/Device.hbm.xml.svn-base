@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class name="br.com.alcatellucent.csm.beans.Device"  table="csmdevice"  lazy="true">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+
+        
+		 <property  name="name"
+		            type="java.lang.String"
+		            update="true"
+		            insert="true"
+		            column="name" />
+
+        <property   name="description"
+		            type="java.lang.String"
+		            update="true"
+		            insert="true"
+		            column="description"/>
+
+ 		<property   name="contextId"
+		            type="java.lang.String"
+		            update="true"
+		            insert="true"
+		            column="context_id"/>
+		            
+		<property   name="trafficPolicyId"
+		            type="java.lang.String"
+		            update="true"
+		            insert="true"
+		            column="trafficpolicy_id"/>
+		<!--             
+		<property   name="trafficPolicyRefresh"
+		            type="java.lang.Integer"
+		            update="true"
+		            insert="true"
+		            column="TPOLICYREFRESH"/>
+		            
+		<property   name="AclRefresh"
+		            type="java.lang.Integer"
+		            update="true"
+		            insert="true"
+		            column="ACLREFRESH"/>
+		-->    
+		       
+
+		<one-to-one name="deviceManager"
+					class="br.com.alcatellucent.csm.beans.DeviceManager" lazy="false"    constrained="true"/>
+					
+		<set name="processorPacketList" inverse="false" cascade="save-update,persist" lazy="false">
+			<key column="csmdevice_id" />
+			<one-to-many class="br.com.alcatellucent.csm.beans.ProcessorPacket"/> 
+		</set>
+		<!--  <set name="poolingHistory" inverse="true" cascade="none" lazy="true"> -->
+		<set name="poolingHistory" inverse="true" cascade="none" lazy="false">
+			<key column="csmdevice_id" />
+			<one-to-many class="br.com.alcatellucent.csm.beans.PoolingHistory"/> 
+		</set>	
+		
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,44 @@
+8
+
+dir
+2570
+http://128.251.235.49:3960/svn/CSM/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/scheduler
+http://128.251.235.49:3960/svn/CSM
+
+
+
+2007-11-28T19:22:18.235340Z
+2469
+alisson
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8a8b9552-90e1-4f6c-b28b-fcf24afd497c
+
+frontend
+dir
+
+SchedulerTrafficPropagation.java
+file
+
+
+
+
+2007-12-06T13:52:18.656676Z
+8f9bbae0581f7742a88c7e54e1df1c93
+2007-11-28T19:22:18.235340Z
+2469
+alisson
+has-props
+

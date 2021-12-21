@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.AldeConfiguration"
+        table="aldeconfig"
+        lazy="false">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+                 
+        <property
+            name="identification"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="identification"
+        />
+        
+        <property
+            name="mode"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="mode"
+        />
+        
+        <property
+            name="attacktolerance"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="attacktolerance"
+        />
+        
+       <property
+            name="waitalert"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="waitalert"
+        />
+
+ 		 <property
+            name="sample"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="sample"
+         />
+  
+  		 <property
+            name="oldnet"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="oldnet"
+         />
+         
+         <property
+            name="safepollmode"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="safepollmode"
+         />
+         
+         <property
+            name="oldbaseline"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="oldbaseline"
+         />
+          
+         <property
+            name="currentbaseline"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="currentbaseline"
+         />
+         
+         
+           <property
+            name="baselinetime"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="baselinetime"
+         />
+         
+         <property
+            name="adjustmentmin"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="adjustmentmin"
+         />
+         
+        <property
+            name="adjustmentmax"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="adjustmentmax"
+         />
+         
+         <property
+            name="csmip"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="csmip"
+         />
+         
+         <property
+            name="csmport"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="csmport"
+         />
+         
+         <property
+         	name="filter"
+         	type="java.lang.String"
+         	update="true"
+         	insert="true"
+         	column="filter"
+         />
+         
+         <many-to-one  column="alde_id" name="alde" cascade="save-update"
+        			 class="br.com.alcatellucent.csm.beans.Alde"/>
+ 
+         	
+        </class>
+</hibernate-mapping>

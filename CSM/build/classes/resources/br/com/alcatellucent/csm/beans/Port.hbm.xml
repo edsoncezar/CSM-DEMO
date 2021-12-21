@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.Port"
+        table="port" >
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property	name="name"
+            		type="java.lang.String"
+            		update="true"
+            		insert="true"
+            		column="name"
+        />
+        
+		<property 	name="portNumber"
+					type="java.lang.Integer"
+					update="true"
+					insert="true"
+					column="port_number" 
+		/>       		  
+		<property 	name="description"
+					type="java.lang.String"
+					update="true"
+					insert="true"
+					column="description"
+		/>
+		<property 	name="value"
+					type="java.lang.Integer"
+					insert="true"
+					update="true"
+					column="value"  
+		/>
+		<property 	name="unit"
+					type="java.lang.String"
+					insert="true"
+					update="true"
+					column="unit"
+		/>
+		
+		<!--  Relacionamento com a tabela de grupos -->
+		
+		<set name="portProtocolGroups" table="PORTPROTOCOLGROUP_has_PORT">
+			<key column="PORTPROTOCOLGROUP_id"/>
+			<many-to-many class="br.com.alcatellucent.csm.beans.PortProtocolGroup" column="id"/>
+		</set>
+		
+		<!--  Relacionamento com a tabela TraficValues -->
+		
+		<set name="traficValues" table="traficValues" cascade="save-update, persist" inverse="true">
+			<key column="port_id"></key>
+			<one-to-many class="br.com.alcatellucent.csm.beans.TraficValues"/>
+		</set>	
+		
+		
+    </class>
+</hibernate-mapping>

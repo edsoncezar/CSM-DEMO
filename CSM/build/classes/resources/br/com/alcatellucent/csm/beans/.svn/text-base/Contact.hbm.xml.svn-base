@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.Contact"
+        table="contact"
+        lazy="false">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property
+            name="area"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="area"
+        />
+        
+        <property
+            name="phone"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="phone"
+        />
+        
+        <property
+            name="mobile"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="mobile"
+        />
+        
+       <property
+            name="email"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="email"
+        />
+        
+  
+        <many-to-one unique="true" column="csmuser_id" name="user" 
+        			class="br.com.alcatellucent.csm.beans.User"/>
+    </class>
+</hibernate-mapping>

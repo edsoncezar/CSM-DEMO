@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="br.com.alcatellucent.csm.beans.Accounting"
+		table="accounting" lazy="false">
+
+		<id name="id" />
+		
+		<property name="name" type="java.lang.String" update="false"
+			insert="false" column="User_Name">
+		</property>
+
+		<property name="userIpAddress" type="java.lang.String" update="false"
+			insert="false" column="Framed_IP_Address">
+		</property>
+
+		<property name="nasIpAddress" type="java.lang.String" update="false"
+			insert="false" column="NAS_IP_Address">
+		</property>
+		
+		<property name="nasPort" type="java.lang.Integer" update="false"
+			insert="false" column="NAS_Port">
+		</property>
+
+		<property name="sessionId" type="java.lang.String" update="false"
+			insert="false" column="Acct_Session_Id">
+		</property>
+
+		<property name="timeSessionBegin" type="java.lang.String" update="false"
+			insert="false" column="Acct_Start_Time">
+		</property>
+
+		<property name="timeSessionEnd" type="java.lang.String" update="false"
+			insert="false" column="Acct_Stop_Time">
+		</property>
+
+	</class>
+
+</hibernate-mapping>

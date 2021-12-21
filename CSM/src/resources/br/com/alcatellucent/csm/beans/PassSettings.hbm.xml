@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+	Author: Igor I Takats - 2007-10-09
+ -->
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.PassSettings"
+        table="pass_settings">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property	name="name"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="name"
+        />
+     		  
+		<property 	name="description"
+					type="string"
+					update="true"
+					insert="true"
+					column="description"
+		/>
+		
+		<property 	name="failedAttempts"
+					type="integer"
+					insert="true"
+					update="true"
+					column="failed_attempts"  
+		/>
+		
+		<property 	name="minimunLength"
+					type="integer"
+					insert="true"
+					update="true"
+					column="minimum_lenght"  
+		/>
+		
+		<property 	name="levelSecurity"
+					type="integer"
+					insert="true"
+					update="true"
+					column="level_security"  
+		/>
+		
+		<property 	name="enforceHistoryQty"
+					type="integer"
+					insert="true"
+					update="true"
+					column="enforce_history_qty"  
+		/>	
+		
+		<property 	name="enforceChangingDays"
+					type="integer"
+					insert="true"
+					update="true"
+					column="enforce_changing_days"  
+		/>	
+		
+		<property 	name="lockDurationMin"
+					type="integer"
+					insert="true"
+					update="true"
+					column="lock_duration_min"  
+		/>						
+		
+		<property 	name="enforceHistoryEnable"
+					type="boolean"
+					insert="true"
+					update="true"
+					column="enforce_history_enable"  
+		/>	
+		
+		<property 	name="enforceChangingEnable"
+					type="boolean"
+					insert="true"
+					update="true"
+					column="enforce_changing_enable"  
+		/>	
+		
+		<property 	name="lockDurationEnable"
+					type="boolean"
+					insert="true"
+					update="true"
+					column="lock_duration_enable"  
+		/>	
+		
+		<property 	name="flagFailedAttempts"
+					type="boolean"
+					insert="true"
+					update="true"
+					column="flag_failed_attempts"  
+		/>
+
+    </class>
+</hibernate-mapping>

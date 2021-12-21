@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.Acl"
+        table="acl"
+        lazy="false">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+        
+        <property   
+           name="contextId"
+		   type="java.lang.String"
+		   update="true"
+		   insert="true"
+		   column="contextid"
+		 />
+       
+        <property
+            name="name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="name"
+        />
+        
+         <property
+            name="description"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="description"
+         />
+        
+        <property
+            name="sourceIp"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="sourceip"
+        />
+        
+        <property
+            name="sourceIpMask"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="sourceipmask"
+        />
+        
+        <property
+            name="sourcePort"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="sourceport"
+        />
+        
+ 		 <property
+            name="destIp"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="destip"
+         />
+         
+         <property
+            name="destIpMask"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="destipmask"
+         />
+         
+         <property
+            name="destPort"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="destport"
+         />
+         
+         <property
+            name="protocol"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="protocol"
+         />
+         
+         <property
+            name="action"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="action"
+         />
+         
+         <property
+            name="threshold"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="threshold"
+         />
+         
+          <property
+            name="priority"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="priority"
+         />
+         
+          <property
+            name="status"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="status"
+         />
+         
+          <property
+            name="timeToLive"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="timetolive"
+         />
+        
+          <property
+            name="isAldeAcl"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+            column="isaldeacl"
+          />
+         
+
+          <property
+            name="alertId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="alert_id"
+          /> 
+   
+    </class>
+</hibernate-mapping>

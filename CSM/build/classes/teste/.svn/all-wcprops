@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/CSM/!svn/ver/2116/SOFTWARE/WEBCONSOLE/src/teste
+END
+TesteRegex.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/CSM/!svn/ver/1951/SOFTWARE/WEBCONSOLE/src/teste/TesteRegex.java
+END
+LoadAclHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/CSM/!svn/ver/1135/SOFTWARE/WEBCONSOLE/src/teste/LoadAclHistory.java
+END
+MockAlert.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/CSM/!svn/ver/1581/SOFTWARE/WEBCONSOLE/src/teste/MockAlert.java
+END
+TestLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CSM/!svn/ver/840/SOFTWARE/WEBCONSOLE/src/teste/TestLog.java
+END
+TesteDatas.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/CSM/!svn/ver/1171/SOFTWARE/WEBCONSOLE/src/teste/TesteDatas.java
+END
+TestSortDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CSM/!svn/ver/1951/SOFTWARE/WEBCONSOLE/src/teste/TestSortDate.java
+END
+TesteHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CSM/!svn/ver/1858/SOFTWARE/WEBCONSOLE/src/teste/TesteHistory.java
+END
+TestePassRegex.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/CSM/!svn/ver/1858/SOFTWARE/WEBCONSOLE/src/teste/TestePassRegex.java
+END
+TesteListaQuartz.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/CSM/!svn/ver/2116/SOFTWARE/WEBCONSOLE/src/teste/TesteListaQuartz.java
+END
+TestePassSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/CSM/!svn/ver/1860/SOFTWARE/WEBCONSOLE/src/teste/TestePassSettings.java
+END
+TesteData.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/CSM/!svn/ver/1858/SOFTWARE/WEBCONSOLE/src/teste/TesteData.java
+END

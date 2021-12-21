@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CSM/!svn/ver/1707/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/displaytag
+END
+DateDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CSM/!svn/ver/1040/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/displaytag/DateDecorator.java
+END
+TimeDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CSM/!svn/ver/1040/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/displaytag/TimeDecorator.java
+END
+UserNameDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/CSM/!svn/ver/1707/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/displaytag/UserNameDecorator.java
+END
+StatusDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/CSM/!svn/ver/1061/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/displaytag/StatusDecorator.java
+END
+ModeDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CSM/!svn/ver/1061/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/displaytag/ModeDecorator.java
+END
+ProcessorPacketDecorator.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/CSM/!svn/ver/1347/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/displaytag/ProcessorPacketDecorator.java
+END

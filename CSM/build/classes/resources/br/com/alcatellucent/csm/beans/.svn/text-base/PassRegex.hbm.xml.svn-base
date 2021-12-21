@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+	Author: Igor I Takats - 2007-10-09
+ -->
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.PassRegex"
+        table="pass_regex">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property	name="name"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="name"
+        />
+     		  
+		<property 	name="description"
+					type="string"
+					update="true"
+					insert="true"
+					column="description"
+		/>
+		
+		<property 	name="literal"
+					type="string"
+					insert="true"
+					update="true"
+					column="literal"  
+		/>
+		
+		<property 	name="isRegExp"
+					type="boolean"
+					insert="true"
+					update="true"
+					column="is_reg_exp"  
+		/>
+		
+		<property 	name="isRefused"
+					type="boolean"
+					insert="true"
+					update="true"
+					column="is_refused"  
+		/>
+		
+		<property 	name="isSystem"
+					type="boolean"
+					insert="true"
+					update="true"
+					column="is_system"  
+		/>
+    </class>
+</hibernate-mapping>

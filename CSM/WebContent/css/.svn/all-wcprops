@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/CSM/!svn/ver/2316/SOFTWARE/WEBCONSOLE/WebContent/css
+END
+print.css
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/css/print.css
+END
+maven-base.css
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/css/maven-base.css
+END
+displaytag.css
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/CSM/!svn/ver/611/SOFTWARE/WEBCONSOLE/WebContent/css/displaytag.css
+END
+portal.css
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/CSM/!svn/ver/2316/SOFTWARE/WEBCONSOLE/WebContent/css/portal.css
+END
+teststyles.css
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/css/teststyles.css
+END
+csmlogStyle.css
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/CSM/!svn/ver/683/SOFTWARE/WEBCONSOLE/WebContent/css/csmlogStyle.css
+END
+maven-theme.css
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/CSM/!svn/ver/535/SOFTWARE/WEBCONSOLE/WebContent/css/maven-theme.css
+END

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class name="br.com.alcatellucent.csm.beans.Operator"  table="operator"  lazy="true">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+
+        
+		 <property  name="name"
+		            type="java.lang.String"
+		            update="true"
+		            insert="true"
+		            column="name" />
+
+        <property   name="email"
+		            type="java.lang.String"
+		            update="true"
+		            insert="true"
+		            column="email"/>
+
+ 		<property   name="mobile"
+		            type="java.lang.String"
+		            update="true"
+		            insert="true"
+		            column="mobile"/>
+		              
+		<property	name="lastAlert"
+            		type="date"
+            		update="true"
+            		insert="true"
+            		column="lastalert"/>        
+		
+    </class>
+</hibernate-mapping>

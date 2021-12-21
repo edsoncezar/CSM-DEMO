@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.ProcessorPacket"
+        table="csmprocessorpacket"
+        lazy="true">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property
+            name="name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="name"
+        />
+        
+        <property
+            name="description"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="description"
+        />
+        
+       <property
+            name="number"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="number"
+        />
+<!-- 
+        <property
+            name="deviceId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="csmdevice_id" />  
+      -->
+      <property
+      	name="sampleThreshold"
+			type="java.lang.Integer"
+			update="true"
+			insert="true"
+			column="sample_threshold" />
+			
+        <property
+            name="trafficPolicyId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="trafficpolicy_id" />  
+            
+            
+        <property
+            name="aldeId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="ALDE_ID" />    
+            
+        <many-to-one	column="csmdevice_id" name="device" cascade="save-update" 
+        			 	class="br.com.alcatellucent.csm.beans.Device" lazy="false"/>          
+    </class>
+    
+</hibernate-mapping>

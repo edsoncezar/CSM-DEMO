@@ -1,0 +1,181 @@
+8
+
+dir
+2570
+http://128.251.235.49:3960/svn/CSM/SOFTWARE/WEBCONSOLE
+http://128.251.235.49:3960/svn/CSM
+
+
+
+2007-12-07T20:53:29.680361Z
+2570
+igor
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8a8b9552-90e1-4f6c-b28b-fcf24afd497c
+
+.project
+file
+
+
+
+
+2007-12-06T13:54:10.646641Z
+f760f20f97b80ca54ef938128261d33f
+2007-11-23T13:56:14.246578Z
+2362
+alisson
+
+CSMDBSQL.txt
+file
+
+
+
+
+2007-12-06T13:54:10.662268Z
+02c1c6b5f2fb5e2e225e2daf245704ff
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+Jude
+dir
+
+src
+dir
+
+docs
+dir
+
+CSM1.0-ACL.SQL
+file
+
+
+
+
+2007-12-06T13:54:10.677895Z
+81051bcc2cf1bedf378224b0a93e2877
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+logicatree.txt
+file
+
+
+
+
+2007-12-06T13:54:10.709149Z
+7927c83844e61a8e5185832e2537aa43
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+CSM1.0.xml
+file
+
+
+
+
+2007-12-06T13:54:10.740403Z
+eced2a1f330fe0f35a47f4dcf6d195e5
+2007-08-31T19:10:10.641124Z
+649
+svnadmin
+
+.classpath
+file
+
+
+
+
+2007-12-06T13:54:10.771657Z
+2d3d33148e4f76e67a73f9b2dca128a4
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+CSM1.0-ACL.html
+file
+
+
+
+
+2007-12-06T13:54:10.818537Z
+8d5e2e3284221b4417ace9ea9bfca236
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+TICKET.txt
+file
+
+
+
+
+2007-12-06T13:54:10.787284Z
+666025efd867abd9c74994e9d1aff5f4
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+PACOTESDOPROJETO.txt
+file
+
+
+
+
+2007-12-06T13:54:10.865418Z
+e1f7f88e8997c252334d625f3d83670a
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+images
+dir
+
+WebContent
+dir
+
+tables
+dir
+
+Modelo DB-30-07-07OLD.xml
+file
+
+
+
+
+2007-12-06T13:54:10.865418Z
+9c2afa4ee06f544a08eebe10aa0d46e5
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+Modelo DB-30-07-07.xml
+file
+
+
+
+
+2007-12-06T13:54:10.896672Z
+9c2afa4ee06f544a08eebe10aa0d46e5
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+.settings
+dir
+

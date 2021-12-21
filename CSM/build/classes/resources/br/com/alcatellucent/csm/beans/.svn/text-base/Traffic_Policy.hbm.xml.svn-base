@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.TrafficPolicy"
+        table="trafficpolicy"
+        lazy="false">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property
+            name="name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="name"
+        />
+        
+        
+          <property
+            name="contextId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="contextid"
+        />
+        
+        
+        <property
+            name="description"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="description"
+        />
+
+		<property
+            name="dateInc"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="dateinc"
+        />       
+       
+        <property
+            name="everyType"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="every_type"
+        />
+               
+        
+        <property
+            name="every"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="every"
+        />
+        
+         <property
+            name="timeStart"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="time_start"
+        />
+                              
+        <property
+            name="dateStart"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="date_start"
+        />
+        
+        <property
+            name="year"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="year"
+        />           
+        
+        	   	 
+       <property
+            name="daysOfWeek"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="days_of_week"
+        /> 	   	   
+	       
+	    <property
+            name="months"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="months"
+        />
+
+    </class>
+</hibernate-mapping>

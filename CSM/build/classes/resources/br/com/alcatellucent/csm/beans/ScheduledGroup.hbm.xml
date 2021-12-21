@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.ScheduledGroup"
+        table="scheduledgroup" >
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property	name="name"
+            		type="java.lang.String"
+            		update="true"
+            		insert="true"
+            		column="name"
+        />
+        
+        <property 	name="description"
+        		  	type="java.lang.String"
+        		 	update="true"
+        		 	insert="true"
+        		 	column="description"/>
+
+		<property 	name="flActive"
+				  	type="java.lang.Boolean"
+				  	update="true"
+				  	insert="true"
+				  	column="active"/> 
+				  	
+		<property 	name="originalId"
+				  	type="java.lang.String"
+				  	update="true"
+				  	insert="true"
+				  	column="original_id"/>   
+				  	    		  
+		<property 	name="flowsValue"
+				  	type="java.lang.Integer"
+				  	update="true"
+				  	insert="true"
+				  	column="flowsvalue"/>  
+				  	
+		<property 	name="downStreamValue"
+				  	type="java.lang.String"
+				  	update="true"
+				  	insert="true"
+				  	column="downstreamvalue"/>  
+				  	 
+		<property 	name="downStreamUnit"
+				  	type="java.lang.String"
+				  	update="true"
+				  	insert="true"
+				  	column="downstreamunit"/> 
+				  	
+		<property 	name="upStreamValue"
+				  	type="java.lang.String"
+				  	update="true"
+				  	insert="true"
+				  	column="upstreamvalue"/> 
+				  	
+		<property 	name="upStreamUnit"
+				  	type="java.lang.String"
+				  	update="true"
+				  	insert="true"
+				  	column="upstreamunit"/> 
+				  	
+		<property 	name="control"
+				  	type="java.lang.String"
+				  	update="true"
+				  	insert="true"
+				  	column="control"/>
+				  	
+		<property 	name="priority"
+				  	type="integer"
+				  	update="true"
+				  	insert="true"
+				  	column="priority"/>				  					  	
+				  			  	
+		<set name="scheduledProtocols" inverse="true" cascade="all" lazy="false">
+			<key column="scheduledgroup_id"></key>
+			<one-to-many class="br.com.alcatellucent.csm.beans.ScheduledProtocol"/>
+		</set>
+
+		<many-to-one  	column="scheduling_id" name="scheduling" 
+        				class="br.com.alcatellucent.csm.beans.Scheduling" lazy="false"/> 
+        				
+        				
+		<!-- <set name="scheduledProtocols" table="scheduledgroup_has_scheduledprotocol"
+			cascade="save-update, persist" inverse="false" lazy="false" >
+			<key column="SCHEDULEDGROUP_ID"></key>
+			<many-to-many class="br.com.alcatellucent.csm.beans.ScheduledProtocol" column="SCHEDULEDPROTOCOL_ID" />
+		</set>
+		
+		<set name="schedulings" table="schedulling_has_scheduledgroup" >
+			<key column="schedulling_id" ></key>
+			<many-to-many class="br.com.alcatellucent.csm.beans.Scheduling" column="id"/>
+		</set> -->
+				
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.quartz.beans.Triggers"
+        table="QRTZ_TRIGGERS"
+        lazy="false">
+
+ 		<id	name="triggerName" column="TRIGGER_NAME"  type="java.lang.String" >
+              <generator class="native"></generator> 
+        </id>
+
+ 		<property
+            name="triggerGroup"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="TRIGGER_GROUP"
+        />
+
+
+	   <property
+            name="jobName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="JOB_NAME"
+        />
+
+	   
+
+	   <property
+            name="jobGroup"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="JOB_GROUP"
+        />
+
+	   <property
+            name="isVolatile"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="IS_VOLATILE"
+        />
+
+
+	   <property
+            name="description"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="DESCRIPTION"
+        />
+
+
+	   <property
+            name="nextFireTime"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="NEXT_FIRE_TIME"
+        />
+
+	    <property
+            name="prevFireTime"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="PREV_FIRE_TIME"
+        />
+
+	    <property
+            name="priority"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="PRIORITY"
+        />
+
+
+	    <property
+            name="triggerState"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="TRIGGER_STATE"
+        />
+	   <property
+            name="triggerType"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="TRIGGER_TYPE"
+        />
+
+	   <property
+            name="startTime"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="START_TIME"
+        />
+
+	   <property
+            name="endTime"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="END_TIME"
+        />
+
+	   <property
+            name="calendarName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="CALENDAR_NAME"
+        />
+
+                
+	   <property
+            name="misFireInstr"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="MISFIRE_INSTR"
+        />          
+
+
+		<set name="cronTriggersList" table="qrtz_triggers" lazy="false" inverse="true" cascade="all" sort="unsorted">
+			<key column="TRIGGER_NAME"></key>
+			<one-to-many class="br.com.alcatellucent.csm.quartz.beans.CronTriggers" />
+		</set>
+	 
+
+
+
+    </class>
+</hibernate-mapping>

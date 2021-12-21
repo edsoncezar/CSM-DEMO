@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/CSM/!svn/ver/1712/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/quartz/beans
+END
+FiredTriggers.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/CSM/!svn/ver/284/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/quartz/beans/FiredTriggers.java
+END
+JobDetails.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CSM/!svn/ver/1712/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/quartz/beans/JobDetails.java
+END
+Triggers.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CSM/!svn/ver/82/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/quartz/beans/Triggers.java
+END
+CronTriggers.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CSM/!svn/ver/517/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/quartz/beans/CronTriggers.java
+END

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping
+>
+    <class
+        name="br.com.alcatellucent.beans.Users"
+        table="csmuser"
+        lazy="false"
+    >
+
+        <id
+            name="id"
+            column="id"
+            type="long"
+        >
+            <generator class="increment">
+            
+            </generator>
+        </id>
+
+ 
+        <property
+            name="name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="name"
+        />
+
+        <property
+            name="mail"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="mail"
+        />
+
+ 		<property
+            name="password"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="password"
+        />
+        
+    
+       <property
+            name="contextId"
+            column="contextId"
+            update="true"
+            insert="true"
+            type="java.lang.Long" />
+        
+        
+        
+
+    </class>
+</hibernate-mapping>

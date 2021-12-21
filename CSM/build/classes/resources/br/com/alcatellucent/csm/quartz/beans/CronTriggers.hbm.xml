@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.quartz.beans.CronTriggers"
+        table="QRTZ_CRON_TRIGGERS"
+        lazy="false">
+     
+     
+     <id	name="triggerName" column="TRIGGER_NAME"  type="java.lang.String" >
+              <generator class="native"></generator> 
+     </id>
+     
+	
+	<property
+            name="triggerGroup"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="TRIGGER_GROUP"
+     />
+
+	<property
+            name="cronExpression"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="CRON_EXPRESSION"
+     />
+     
+	<property
+            name="timeZoneId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="TIME_ZONE_ID"
+     />
+     
+     <!--  
+     <set name="firedTriggersList" table="qrtz_fired_triggers" lazy="false" inverse="true" cascade="all" sort="unsorted">
+			<key column="TRIGGER_NAME"></key>
+			<one-to-many class="br.com.alcatellucent.csm.quartz.beans.FiredTriggers" />
+	 </set>
+     -->
+    
+	<many-to-one name="jobDetails"
+			class="br.com.alcatellucent.csm.quartz.beans.JobDetails" cascade="all"			
+			outer-join="auto" update="false" insert="false" >
+			<column name="TRIGGER_NAME" />
+	</many-to-one>
+     
+
+    </class>
+</hibernate-mapping>

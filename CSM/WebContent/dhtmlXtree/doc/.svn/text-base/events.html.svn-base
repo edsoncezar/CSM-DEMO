@@ -1,0 +1,97 @@
+﻿<script><!--
+		
+			function openFull(el){
+				el.nextSibling.style.display=='none'?el.nextSibling.style.display='block':el.nextSibling.style.display='none'
+			}
+			function expandAll(fl){
+				var elAr = document.getElementsByTagName("DIV");
+				for(var i=2;i<elAr.length;i++){
+					if(elAr[i].style.display=='none' || elAr[i].block_fl){
+						elAr[i].block_fl = true;
+						if(fl)
+							elAr[i].style.display = "";
+						else
+							elAr[i].style.display = "none";
+					}
+				}
+			}
+		
+		--></script><style>
+			.{font-family:arial;}
+			h2 {cursor:pointer;font-size:16px;margin-left:10px;line-height:10px}
+			h3 {cursor:pointer;font-weight:normal;color:gray;text-decoration:underline;line-height:10px}
+			div.block {margin-left:30px;}
+			table.compare th{
+              font-size:16px; font-family:Arial; font-weight:bold;
+            }
+			table.compare td{
+              font-size:14px; font-family:Arial;
+            }
+			span.common {
+				font-size:14px; font-family:Arial;
+            }
+			div.command {
+				font-size:12px; font-family:Arial;
+				color:navy; font-weight:bold;
+				margin-left:50px;
+            }
+
+
+
+		</style>
+
+	<span    class="common">
+        Starting from dhtmlTree 1.5 new event system introduced ( while old
+		methods still accessible - it is strongly recommended to use new one )<br />
+	</span>  <br />
+<table class='compare' align="center" width="50%">
+  <tr>
+    <th>Old event system</th>
+    <th>New event system</th>
+  </tr>
+  <tr>
+    <td>Different name for event commands</td>
+    <td>Single command for all events</td>
+  </tr>
+  <tr>
+    <td>Only one handler per event</td>
+    <td>Multiple handlers for event</td>
+  </tr>
+  <tr>
+    <td>Event handlers not detachable</td>
+    <td>Detachable handlers</td>
+  </tr>
+</table>
+<br /><br /><br />
+	<h2>Attaching event</h2>
+	<span    class="common">
+		Instead of <br />
+		<div class="command">tree.setSomeEventHandler(func)</div>
+		You can use
+		<div class="command">var eventId=tree.attachEvent(EventName,func)</div>
+		Where
+			<ul>
+				<li>EventName - name of event, please look below</li>
+				<li>func - function name or function object</li>
+			</ul>
+	</span>
+	<br /><br />
+	<span    class="common">
+		The value returned by attachEvent function can be used to detach event in future
+   		<div class="command">var eventId=tree.attachEvent("onClick",func);<br />... some actions...<br />tree.detachEvent(eventId);</div>
+	</span>
+<br /><br /><br />
+
+
+
+		<div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onRightClick<br /><strong style="color:#6c6c6c;font-size:12px">Event occured after right mouse button was clicked.</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">(string) ID of clicked item</li><li type="circle">(object) event object</li><span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onClick<br /><strong style="color:#6c6c6c;font-size:12px">Event raised immideatly after text part of item in tree was clicked, but after default onClick functionality was processed.</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">ID of clicked item</li><li type="circle">ID of previously selected item</li><span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onSelect<br /><strong style="color:#6c6c6c;font-size:12px">Event raised immideatly after selection in tree was changed</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">selected item ID ( list of IDs in case of multiselection)</li><span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onCheck<br /><strong style="color:#6c6c6c;font-size:12px">Event raised immideatly after item in tree was checked/unchecked.</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">ID of item which will be checked/unchecked</li><li type="circle">Current checkbox state. 1 - item checked, 0 - item unchecked.</li><span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onOpenStart<br /><strong style="color:#6c6c6c;font-size:12px">Event raised immideatly after item in tree got command to open/close , and before item was opened//closed. Event also raised for unclosable nodes and nodes without open/close functionality - in that case result of function will be ignored.</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">ID of node which will be opened/closed</li><li type="circle">Current open state of tree item. 0 - item has not childs, -1 - item closed, 1 - item opened.</li><br /><em style="color:blue;">Returns:</em>true - confirm opening/closing; false - deny opening/closing;<span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onOpenEnd<br /><strong style="color:#6c6c6c;font-size:12px">Event raised immideatly after item in tree got command to open/close , and before item was opened//closed. Event also raised for unclosable nodes and nodes without open/close functionality - in that case result of function will be ignored.</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">ID of node which will be opened/closed</li><li type="circle">Current open state of tree item. 0 - item has not childs, -1 - item closed, 1 - item opened.</li><span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onDblClick<br /><strong style="color:#6c6c6c;font-size:12px">Event raised immideatly after item in tree was doubleclicked, before default onDblClick functionality was processed.</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">ID of item which was doubleclicked</li><br /><em style="color:blue;">Returns:</em>true - confirm opening/closing; false - deny opening/closing;<span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onMouseIn<br /><strong style="color:#6c6c6c;font-size:12px">Event raised immideatly after mouse hovered over item</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">ID of item</li><span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onMouseOut<br /><strong style="color:#6c6c6c;font-size:12px">Event raised immideatly after mouse moved out of item</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">ID of clicked item</li><span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onDrag<br /><strong style="color:#6c6c6c;font-size:12px">Event occured after item was dragged and droped on another item, but before item moving processed.</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">ID of source item</li><li type="circle">ID of target item</li><li type="circle">if node droped as sibling then contain id of item before whitch source node will be inserted</li><li type="circle">source Tree object</li><li type="circle">target Tree object</li><br /><em style="color:blue;">Returns:</em>true - confirm drag-and-drop; false - deny drag-and-drop;<span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onDrop
+					[<span style="color:red;">Professional</span>]
+				<br /><strong style="color:#6c6c6c;font-size:12px">Event raised after drag-and-drop processed. Event also raised while programmatic moving nodes.</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">ID of source item (ID after inserting in tree, my be not equal to initial ID)</li><li type="circle">ID of target item</li><li type="circle">if node droped as sibling then contain id of item before whitch source node will be inserted</li><li type="circle">source Tree object</li><li type="circle">target Tree object</li><span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onXLS
+					[<span style="color:red;">Professional</span>]
+				<br /><strong style="color:#6c6c6c;font-size:12px">event fired simultaneously with starting XML parsing</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">tree object</li><li type="circle">item id, for which xml loaded</li><span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onXLE
+					[<span style="color:red;">Professional</span>]
+				<br /><strong style="color:#6c6c6c;font-size:12px">event fired simultaneously with ending XML parsing, new items already available in tree</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">tree object</li><li type="circle">last parsed parent id</li><span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onDragIn
+					[<span style="color:red;">Professional</span>]
+				<br /><strong style="color:#6c6c6c;font-size:12px">Event raised when item draged other other dropable target</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">ID draged item</li><li type="circle">ID potencial drop landing</li><li type="circle">source object</li><li type="circle">target object</li><br /><em style="color:blue;">Returns:</em>true - allow drop; false - deny drop;<span /></div><div style="margin-top:5px;font-weight:bold;cursor:pointer;" onclick="openFull(this)">onEdit
+					[<span style="color:red;">Professional</span>]
+				<br /><strong style="color:#6c6c6c;font-size:12px">Event occurs on 4 different stages of edit process: before editing started (cancelable), after editing started, before closing (cancelable), after closed</strong><br /><span /></div><div style="display:none;margin-left:20px;font-size:12px"><li type="circle">state - 0 before editing started , 1 after editing started, 2 before closing, 3 after closed</li><li type="circle">id - id of edited items</li><li type="circle">tree - tree object</li><li type="circle">value - for stage 0 and 2, value of editor</li><br /><em style="color:blue;">Returns:</em>for stages 0 and 2; true - confirm opening/closing, false - deny opening/closing;  text - edit value<span /></div>

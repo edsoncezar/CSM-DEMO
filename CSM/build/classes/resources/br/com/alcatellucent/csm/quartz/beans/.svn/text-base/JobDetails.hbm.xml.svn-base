@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class  name="br.com.alcatellucent.csm.quartz.beans.JobDetails"  table="QRTZ_JOB_DETAILS"  lazy="false">
+               
+        
+        <id	name="jobName" column="JOB_NAME"  type="java.lang.String" >
+              <generator class="native"></generator> 
+        </id>
+
+        
+	    <property
+            name="jobGroup"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="JOB_GROUP"
+        />
+        
+	    <property
+            name="description"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="DESCRIPTION"
+        />
+        
+	    <property
+            name="jobClassName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="JOB_CLASS_NAME"
+        />
+        
+	    <property
+            name="isDurable"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="IS_DURABLE"
+        />
+        
+	    <property
+            name="isVolatile"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="IS_VOLATILE"
+        />
+        
+	    <property
+            name="isStateful"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="IS_STATEFUL"
+        />
+        
+		<property
+            name="requestsRecovery"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="REQUESTS_RECOVERY"
+	     /> 	    
+	        
+	    <set name="triggersList" table="qrtz_triggers" lazy="false" inverse="true" cascade="all" sort="unsorted">
+			<key column="JOB_NAME"></key>
+			<one-to-many class="br.com.alcatellucent.csm.quartz.beans.Triggers" />
+		</set>
+		
+		
+		<many-to-one name="triggers"
+			class="br.com.alcatellucent.csm.quartz.beans.Triggers" cascade="all"			
+			outer-join="auto" update="false" insert="false" lazy="false">
+			<column name="JOB_NAME" />
+		</many-to-one>
+	  		 
+		<many-to-one name="cronTriggers"
+			class="br.com.alcatellucent.csm.quartz.beans.CronTriggers" cascade="all"			
+			outer-join="auto" update="false" insert="false" >
+			<column name="JOB_NAME" />
+		</many-to-one>    
+		 
+		 
+		 
+		 
+		
+		
+		
+	        
+    </class>
+</hibernate-mapping>

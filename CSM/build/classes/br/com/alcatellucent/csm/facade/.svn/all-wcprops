@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/facade
+END
+UserFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CSM/!svn/ver/1278/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/facade/UserFacade.java
+END
+DeviceFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CSM/!svn/ver/1277/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/facade/DeviceFacade.java
+END
+UserProfileFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CSM/!svn/ver/2057/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/facade/UserProfileFacade.java
+END
+ContextFacade.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CSM/!svn/ver/1276/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/facade/ContextFacade.java
+END

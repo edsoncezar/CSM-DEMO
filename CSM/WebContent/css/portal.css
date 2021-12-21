@@ -1,0 +1,391 @@
+@CHARSET "ISO-8859-1";
+
+.tblLogCriteria table {
+	border: none;			
+}
+
+.tblLogCriteria th {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 150px;
+	
+}
+
+.tblLogCriteria #selectDate {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 120px;
+	height: 17px;
+}
+
+.tblLogCriteria #selectTextId {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 120px;
+	height: 17px;
+}
+
+
+.errors 
+{
+	list-style-type: none;
+	font-weight: bold;
+	color: Red;
+}
+
+#DDOSTable 
+{
+	border-bottom: 1px solid Black;
+	border-top: 1px solid Black;
+	border-right: 1px solid Black;
+	border-left: 1px solid Black;
+	
+}
+
+#DDOSTable th
+{
+	width: 100px;
+	background-color: #E1E1E1;
+}
+
+#DDOSTable tr
+{
+	width: 350px;
+}
+	
+#DDOSTable tr #silver
+{
+	background-color: #EEEEEE;
+}
+
+#DDOSTable tr #white
+{
+	background-color: White;
+}
+
+#DDOSListDiv
+{
+	display: width:350;
+	min-height: 50px;
+	background-color: white;
+	color: black;
+	/* border: thin dashed silver; */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font: normal;
+}
+ 
+#DDOSListDiv ul
+{
+	list-style: url(../img/icons/page_alert.gif);
+}
+
+#DDOSListDiv ul li {
+	font: 10px Arial, Helvetica, sans-serif;
+}
+
+#DDOSListDiv ul li #errorEvent {
+	list-style-image: url(../img/icons/action_stop.gif);
+}
+
+#DDOSListDiv ul li #warnEvent {
+	list-style-image: url(../img/icons/page_alert.gif);
+}
+
+#errorDiv
+{
+	display: none; width:350;
+	min-height: 50px;
+	background-color: #FFD4FF;
+	color: black;
+	font-weight: bold;
+	border: thin dashed silver;
+}
+
+#errorDiv ul
+{
+	list-style: none;
+}
+
+#errorDiv ul li {
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
+.commonTable
+{
+	width: 100%;
+	border: solid 1px silver;
+	padding: 0px;
+}
+
+.commonHeader
+{
+	background-image: url("../img/bgrd_header_engage.gif");
+	background-color: blue;
+	border-bottom: solid 1px silver;
+	color: #554295;
+	font-weight: bold;
+	padding-left: 5px; 
+}
+
+label
+{
+	width: 4em;
+	float: left;
+	text-align: right;
+	margin-right: 0.5em;
+	display: block	
+}
+
+.formDesc{
+	color: #000000;
+}
+
+form
+{
+	color:graytext;
+	font-size: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+input
+{
+	border: 1px solid  #554295;
+	font-family: verdana;
+	font-weight: 550;
+	font-size: 10px;
+	color: #565c5e;  
+}
+
+.submit
+{
+	color:white;
+	font-style: italic;
+	font-weight: bold;
+	background-image: url("../img/buttonBackground.jpg");
+	border: 1px silver;
+	font-size: 10; 
+	padding-top: 3 ;
+	padding-bottom: 3;      
+}
+
+.checkbox input 
+{
+	color:white;
+	font-weight: bold;
+	border: none;
+	font-size: 10px;
+	vertical-align: middle;      
+}
+
+.testelink
+{
+	 font-size: 11px; 
+	 font-weight: bold; 
+	 color: #554295 ;
+	 text-decoration: none;
+}
+
+fieldset
+{
+	border: 1px solid silver;
+	width: 	25em;
+	background-color: #F9F9FB;
+}
+
+legend
+{
+	color: #554295 ;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight: bolder;
+	background-image: url("../img/bgrd_header_engage.gif");
+	border: 1px solid silver;
+	padding: 2px 6px
+} 
+	
+textarea
+{
+	border: 1px solid  #554295;
+	font-family: verdana;
+	font-size: 10px;
+	color: #565c5e; 
+}
+
+select 
+{
+	font-family: verdana;
+	font-size: 11px;
+ 	margin: 0px; 
+ 	color: #565c5e; 
+ 	font-family: verdana; 
+ 	background-color: #ffffff;
+}
+	
+BODY {
+	FONT-SIZE: 10px; MARGIN: 0px; COLOR: #565c5e; LINE-HEIGHT: 1.35em; FONT-FAMILY: verdana, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+
+A {
+	COLOR: #565c5e; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #565c5e; TEXT-DECORATION: none
+}
+BODY TD {
+	FONT-SIZE: 10px; LINE-HEIGHT: 1.35em; FONT-FAMILY: verdana, Arial, Helvetica, sans-serif
+}
+BODY TH {
+	FONT-SIZE: 10px; LINE-HEIGHT: 1.35em; FONT-FAMILY: verdana, Arial, Helvetica, sans-serif
+}
+
+
+IFRAME {
+	BORDER-STYLE: none;
+}
+A:hover {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+
+TH {
+	TEXT-ALIGN: left
+}
+SUP {
+	FONT-SIZE: 0.7em; LINE-HEIGHT: 0.7em; FONT-FAMILY: arial
+}
+SUB {
+	FONT-SIZE: 0.7em; LINE-HEIGHT: 0.7em; FONT-FAMILY: arial
+}
+
+h3 {
+	margin-top: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 4px 4px 4px 0;
+	color: #999 !important;
+	background: none;
+	font-weight: none;
+	font-size: 20px;
+	border-bottom: 1px dashed #ccc;	
+}
+
+.warningDiv
+{
+	display: none; width:60%;
+	min-height: 80px;
+	background-color: #F9FFC7;
+	color: black;
+	font-weight: bold;
+	font-size: medium;
+	border: thin solid orange;
+}
+
+.errorsDiv
+{
+	display: none; width:60%;
+	min-height: 80px;
+	background-color:#FFCCBB;
+	color: black;
+	font-weight: bold;
+	font-size: large;
+	border: thin solid red;
+}
+
+.confirmDiv
+{
+	display: none; width:60%;
+	min-height: 80px;
+	background-color:#F3E5FF;
+	color: black;
+	font-weight: bold;
+	font-size: large;
+	border: thin solid #DBB3FF;
+}
+
+.modalBackground {
+	background-color:black;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+	-moz-opacity: 0.7;
+	opacity: 70;
+}
+
+/*******************************************************************
+ * Style for tabs menu *********************************************
+ *******************************************************************/
+h2 {
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+
+img {
+	border: none;
+}
+
+/*- Menu Tabs 4--------------------------- */
+#tabs4 {
+	float: left;
+	width: 100%;
+	font-size: 93%;
+	line-height: normal;
+	border-bottom: 1px solid #6B78A9;
+}
+
+#tabs4 ul {
+	margin: 0;
+	padding: 10px 10px 0 50px;
+	list-style: none;
+}
+
+#tabs4 li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#tabs4 a {
+	float: left;
+	background: url("../img/tabComponent/tableft4.gif") no-repeat left top;
+	margin: 0;
+	padding: 0 0 0 7px;
+	text-decoration: none;
+}
+
+#tabs4 a span {
+	float: left;
+	display: block;
+	background: url("../img/tabComponent/tabright4.gif") no-repeat right top;
+	padding: 5px 15px 4px 6px;
+	color: #6B78A9;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#tabs4 a span {
+	float: none;
+}
+
+/* End IE5-Mac hack */
+#tabs4 a:hover span {
+	color: #6B78A9;
+}
+
+#tabs4 a:hover {
+	background-position: 0% -42px;
+}
+
+#tabs4 a:hover span {
+	background-position: 100% -42px;
+}
+
+#tabs4 #current a {
+	background-position: 0% -42px;
+}
+
+#tabs4 #current a span {
+	background-position: 100% -42px;
+	font-weight: bold;
+}
+ 
+/*******************************************************************
+ * END of Style for tabs menu **************************************
+ *******************************************************************/
+ 
+	

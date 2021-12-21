@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/util/persistence/interfaces
+END
+UserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/util/persistence/interfaces/UserDAO.java
+END
+UserProfileDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/util/persistence/interfaces/UserProfileDAO.java
+END
+ContextDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/util/persistence/interfaces/ContextDao.java
+END
+CommonDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/CSM/!svn/ver/1477/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/util/persistence/interfaces/CommonDAO.java
+END

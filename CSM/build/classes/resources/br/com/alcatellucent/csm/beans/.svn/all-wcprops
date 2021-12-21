@@ -1,0 +1,245 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CSM/!svn/ver/2549/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans
+END
+GroupTrafficPolicy.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/CSM/!svn/ver/660/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/GroupTrafficPolicy.hbm.xml
+END
+InMon.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CSM/!svn/ver/800/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/InMon.hbm.xml
+END
+StaticIP.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/CSM/!svn/ver/2004/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/StaticIP.hbm.xml
+END
+AclHistory.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CSM/!svn/ver/2487/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/AclHistory.hbm.xml
+END
+ScheduledProtocol.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/CSM/!svn/ver/1910/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/ScheduledProtocol.hbm.xml
+END
+Context.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/CSM/!svn/ver/696/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Context.hbm.xml
+END
+PoolingHistory.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/CSM/!svn/ver/1804/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/PoolingHistory.hbm.xml
+END
+DeviceManager.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/CSM/!svn/ver/2513/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/DeviceManager.hbm.xml
+END
+Operator.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/CSM/!svn/ver/1191/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Operator.hbm.xml
+END
+Contact.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/CSM/!svn/ver/660/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Contact.hbm.xml
+END
+UserProfile.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CSM/!svn/ver/660/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/UserProfile.hbm.xml
+END
+SchedulerProtocol.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/CSM/!svn/ver/1220/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/SchedulerProtocol.hbm.xml
+END
+Role.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CSM/!svn/ver/660/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Role.hbm.xml
+END
+Resolver.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/CSM/!svn/ver/1960/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Resolver.hbm.xml
+END
+PassRegex.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/CSM/!svn/ver/1844/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/PassRegex.hbm.xml
+END
+Alde.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CSM/!svn/ver/1174/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Alde.hbm.xml
+END
+Domain.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/CSM/!svn/ver/1960/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Domain.hbm.xml
+END
+DeviceDenied.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CSM/!svn/ver/660/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/DeviceDenied.hbm.xml
+END
+ScheduledGroup.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/CSM/!svn/ver/2021/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/ScheduledGroup.hbm.xml
+END
+User.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CSM/!svn/ver/2175/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/User.hbm.xml
+END
+ScheduledTrafficValues.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/CSM/!svn/ver/2021/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/ScheduledTrafficValues.hbm.xml
+END
+Control.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/CSM/!svn/ver/1921/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Control.hbm.xml
+END
+TrafficPolicyHistory.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/CSM/!svn/ver/813/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/TrafficPolicyHistory.hbm.xml
+END
+PortProtocolGroup.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/CSM/!svn/ver/1056/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/PortProtocolGroup.hbm.xml
+END
+Port.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CSM/!svn/ver/660/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Port.hbm.xml
+END
+Scheduling.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CSM/!svn/ver/1324/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Scheduling.hbm.xml
+END
+PassSettings.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/CSM/!svn/ver/1923/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/PassSettings.hbm.xml
+END
+PassHistory.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CSM/!svn/ver/1942/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/PassHistory.hbm.xml
+END
+TraficValues.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/CSM/!svn/ver/1176/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/TraficValues.hbm.xml
+END
+Accounting.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CSM/!svn/ver/1970/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Accounting.hbm.xml
+END
+AldeConfig.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CSM/!svn/ver/2464/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/AldeConfig.hbm.xml
+END
+Traffic_Policy.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/CSM/!svn/ver/660/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Traffic_Policy.hbm.xml
+END
+TrafficPolicy.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/CSM/!svn/ver/660/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/TrafficPolicy.hbm.xml
+END
+Acl.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CSM/!svn/ver/1895/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Acl.hbm.xml
+END
+Device.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/CSM/!svn/ver/2540/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Device.hbm.xml
+END
+Protocol.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/CSM/!svn/ver/2021/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Protocol.hbm.xml
+END
+Users.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CSM/!svn/ver/660/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Users.hbm.xml
+END
+AclRecipient.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/CSM/!svn/ver/2480/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/AclRecipient.hbm.xml
+END
+ProcessorPacket.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/CSM/!svn/ver/2386/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/ProcessorPacket.hbm.xml
+END
+Alert.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/CSM/!svn/ver/2408/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/beans/Alert.hbm.xml
+END

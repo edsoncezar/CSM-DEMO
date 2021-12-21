@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/persistence/hibernate
+END
+HbContextDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/persistence/hibernate/HbContextDAO.java
+END
+HbCommonDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/persistence/hibernate/HbCommonDAO.java
+END
+HbUserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/persistence/hibernate/HbUserDAO.java
+END
+HbUserProfileDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/persistence/hibernate/HbUserProfileDAO.java
+END

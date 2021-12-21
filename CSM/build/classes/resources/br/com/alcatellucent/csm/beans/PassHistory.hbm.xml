@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+	Author: Igor I Takats - 2007-10-09
+ -->
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.PassHistory"
+        table="pass_history">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property	name="name"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="name"
+        />
+     		  
+		<property 	name="description"
+					type="string"
+					update="true"
+					insert="true"
+					column="description"
+		/>
+		
+		<property 	name="userId"
+					type="string"
+					insert="true"
+					update="true"
+					column="user_id"  
+		/>
+		
+		<property 	name="password"
+					type="string"
+					insert="true"
+					update="true"
+					column="password"  
+		/>
+		
+		<property 	name="dateTime"
+					type="java.util.Date"
+					insert="true"
+					update="true"
+					column="date_time"  
+		/>
+
+    </class>
+</hibernate-mapping>

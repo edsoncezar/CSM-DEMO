@@ -1,0 +1,269 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans
+END
+Acl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CSM/!svn/ver/1894/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Acl.java
+END
+Device.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CSM/!svn/ver/2325/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Device.java
+END
+SchedulerProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CSM/!svn/ver/2018/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/SchedulerProtocol.java
+END
+Protocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CSM/!svn/ver/2018/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Protocol.java
+END
+ProcessorPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CSM/!svn/ver/2521/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/ProcessorPacket.java
+END
+Alert.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CSM/!svn/ver/2405/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Alert.java
+END
+DeviceDenied.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/DeviceDenied.java
+END
+GroupTrafficPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CSM/!svn/ver/78/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/GroupTrafficPolicy.java
+END
+AclHistoryObj.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CSM/!svn/ver/1627/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/AclHistoryObj.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/User.java
+END
+TrafficPolicyHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/CSM/!svn/ver/972/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/TrafficPolicyHistory.java
+END
+SchedulerPort.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CSM/!svn/ver/1632/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/SchedulerPort.java
+END
+Port.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CSM/!svn/ver/124/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Port.java
+END
+PassHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CSM/!svn/ver/1834/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/PassHistory.java
+END
+TraficValues.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CSM/!svn/ver/1339/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/TraficValues.java
+END
+PoolingHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CSM/!svn/ver/2075/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/PoolingHistory.java
+END
+Accounting.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CSM/!svn/ver/1972/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Accounting.java
+END
+Contact.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CSM/!svn/ver/1630/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Contact.java
+END
+ChoosePolicyObj.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CSM/!svn/ver/1485/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/ChoosePolicyObj.java
+END
+Operator.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CSM/!svn/ver/1165/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Operator.java
+END
+Group.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CSM/!svn/ver/989/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Group.java
+END
+AldeConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CSM/!svn/ver/2461/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/AldeConfiguration.java
+END
+TrafficPolicy.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CSM/!svn/ver/2187/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/TrafficPolicy.java
+END
+UserProfile.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CSM/!svn/ver/617/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/UserProfile.java
+END
+UserLogged.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CSM/!svn/ver/2526/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/UserLogged.java
+END
+UserAccessControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/UserAccessControl.java
+END
+AldeAlertsHours.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/CSM/!svn/ver/1628/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/AldeAlertsHours.java
+END
+PassRegex.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CSM/!svn/ver/1939/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/PassRegex.java
+END
+Resolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CSM/!svn/ver/1960/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Resolver.java
+END
+Role.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CSM/!svn/ver/2182/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Role.java
+END
+AclRecipient.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CSM/!svn/ver/2479/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/AclRecipient.java
+END
+Alde.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CSM/!svn/ver/2461/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Alde.java
+END
+Domain.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CSM/!svn/ver/1960/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Domain.java
+END
+TrafficPolicyHistoryObj.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CSM/!svn/ver/1633/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/TrafficPolicyHistoryObj.java
+END
+ScheduledGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CSM/!svn/ver/2018/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/ScheduledGroup.java
+END
+ScheduledTrafficValues.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/CSM/!svn/ver/2018/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/ScheduledTrafficValues.java
+END
+InMon.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CSM/!svn/ver/765/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/InMon.java
+END
+StaticIP.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CSM/!svn/ver/2010/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/StaticIP.java
+END
+ScheduledProtocol.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CSM/!svn/ver/1632/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/ScheduledProtocol.java
+END
+PortProtocolGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CSM/!svn/ver/2265/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/PortProtocolGroup.java
+END
+Context.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CSM/!svn/ver/671/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Context.java
+END
+Scheduling.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CSM/!svn/ver/1341/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/Scheduling.java
+END
+PassSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CSM/!svn/ver/1926/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/PassSettings.java
+END
+DeviceManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CSM/!svn/ver/2332/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/beans/DeviceManager.java
+END

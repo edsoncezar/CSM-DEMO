@@ -1,0 +1,97 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- Settings for a local HSQL (testing) database. -->
+		<!--
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://127.0.0.1:3306/agyadb</property>
+		<property name="connection.username">csmadmin</property>
+		<property name="connection.password">lab123</property>
+		-->
+		
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/agyadb</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">root</property>
+		
+		<!-- configuration pool via c3p0--> 
+		<property name="hibernate.c3p0.acquire_increment">1</property> 
+		<property name="hibernate.c3p0.idle_test_period">100</property> <!-- seconds --> 
+		<property name="hibernate.c3p0.min_size">10</property> 
+		<property name="hibernate.c3p0.max_size">100</property> 
+		<property name="hibernate.c3p0.max_statements">0</property> 
+		<property name="hibernate.c3p0.timeout">100</property> <!-- seconds --> 
+		<!-- DEPRECATED very expensive property name="c3p0.validate>-->
+		
+		<!-- Disable second-level cache. -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+		<property name="cache.use_query_cache">false</property>
+		<property name="cache.use_minimal_puts">false</property>
+		<property name="max_fetch_depth">3</property>
+		
+		<!-- Print SQL to stdout. -->
+		<property name="show_sql">false</property>
+		<property name="format_sql">true</property>
+		
+		<!-- Bind the getCurrentSession() method to the thread. -->
+		<property name="current_session_context_class">thread</property>
+		
+		<!-- Hibernate XML mapping files -->
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/User.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Context.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Contact.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Role.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Device.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/DeviceManager.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/ProcessorPacket.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/DeviceDenied.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/UserProfile.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Alde.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/AldeConfig.hbm.xml" />  
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Control.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Protocol.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Port.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/PortProtocolGroup.hbm.xml" /> 
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/TraficValues.hbm.xml" /> 	
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/GroupTrafficPolicy.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Operator.hbm.xml" /> 
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Alert.hbm.xml" /> 
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/TrafficPolicy.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/InMon.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Acl.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/SchedulerProtocol.hbm.xml" />		
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Scheduling.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/ScheduledProtocol.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/ScheduledGroup.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/ScheduledTrafficValues.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/TrafficPolicyHistory.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/AclHistory.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/PoolingHistory.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Domain.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Resolver.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/StaticIP.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/AclRecipient.hbm.xml" />
+		<!--  hbm.xml  Log -->
+		<mapping resource="br/com/alcatellucent/csm/logging/persistence/CsmLog.hbm.xml" />
+		<!--  hbm.xml  Quartz   -->
+		<mapping resource="resources/br/com/alcatellucent/csm/quartz/beans/JobDetails.hbm.xml" />   
+		<mapping resource="resources/br/com/alcatellucent/csm/quartz/beans/Triggers.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/quartz/beans/CronTriggers.hbm.xml" />	
+		<mapping resource="resources/br/com/alcatellucent/csm/quartz/beans/FiredTriggers.hbm.xml" />	
+		<!--  hbm.xml  Password Policies   -->
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/PassSettings.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/PassRegex.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/PassHistory.hbm.xml" />
+		<mapping resource="resources/br/com/alcatellucent/csm/beans/Accounting.hbm.xml" />
+		
+		<!-- Hibernate Annotations (and package-info.java)
+		<mapping package="org.mypackage"/>
+		<mapping class="org.MyClass/>
+		-->
+
+	</session-factory>
+</hibernate-configuration>

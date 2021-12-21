@@ -1,0 +1,471 @@
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="formUser"
+			type="br.com.alcatellucent.csm.form.FormUser" />
+		<form-bean name="aldeForm"
+			type="br.com.alcatellucent.csm.form.AldeForm" />
+		<form-bean name="DeviceForm"
+			type="br.com.alcatellucent.csm.form.DeviceForm" />
+		<form-bean name="ProcessorPacketForm"
+			type="br.com.alcatellucent.csm.form.ProcessorPacketForm" />
+		<form-bean name="LoginForm"
+			type="br.com.alcatellucent.csm.form.LoginForm" />
+		<form-bean name="formOperator"
+			type="br.com.alcatellucent.csm.form.OperatorForm" />
+		<form-bean name="ProtocolForm"
+			type="br.com.alcatellucent.csm.form.ProtocolForm" />
+		<form-bean name="PortForm"
+			type="br.com.alcatellucent.csm.form.PortForm" />
+		<form-bean name="PortProtocolGroupForm"
+			type="br.com.alcatellucent.csm.form.PortProtocolGroupForm" />
+		<form-bean name="schedulerForm"
+			type="br.com.alcatellucent.csm.form.SchedulingForm" />
+		<form-bean name="PortForm"
+			type="br.com.alcatellucent.csm.form.PortForm" />
+		<form-bean name="PortProtocolGroupForm"
+			type="br.com.alcatellucent.csm.form.PortProtocolGroupForm" />
+		<form-bean name="TrafficPolicyForm"
+			type="br.com.alcatellucent.csm.form.TrafficPolicyForm" />
+		<form-bean name="TrafficPolicyHistoryForm"
+			type="br.com.alcatellucent.csm.form.TrafficPolicyHistoryForm" />
+		<form-bean name="AclForm"
+			type="br.com.alcatellucent.csm.form.AclForm" />
+		<form-bean name="CsmLogSearchForm"
+			type="br.com.alcatellucent.csm.logging.form.CsmLogSearchForm" />
+		<form-bean name="ScheduledGroupForm"
+			type="br.com.alcatellucent.csm.form.ScheduledGroupForm" />
+		<form-bean name="ScheduledProtocolForm"
+			type="br.com.alcatellucent.csm.form.ScheduledProtocolForm" />
+		<form-bean name="ChoosePolicyForm"
+			type="br.com.alcatellucent.csm.form.ChoosePolicyForm" />
+		<form-bean name="ContextForm"
+			type="br.com.alcatellucent.csm.form.ContextForm" />
+		<form-bean name="InMonForm"
+			type="br.com.alcatellucent.csm.form.InMonForm" />
+		<form-bean name="MyAccount"
+			type="br.com.alcatellucent.csm.form.MyAccountForm" />
+		<form-bean name="formProfile"
+			type="br.com.alcatellucent.csm.form.UserProfileForm" />
+		<form-bean name="DashBoardForm"
+			type="br.com.alcatellucent.csm.form.DashBoardForm" />
+		<form-bean name="choosePolicyProtocolForm"
+			type="br.com.alcatellucent.csm.form.ChoosePolicyProtocolForm" />
+		<form-bean name="DashBoardForm"
+			type="br.com.alcatellucent.csm.form.DashBoardForm" />
+		<form-bean name="AclHistoryForm"
+			type="br.com.alcatellucent.csm.form.AclHistoryForm" />
+		<form-bean name="PasswordSettingForm"
+			type="br.com.alcatellucent.csm.form.PasswordSettingForm" />
+		<form-bean name="PasswordRegexForm"
+			type="br.com.alcatellucent.csm.form.PasswordRegexForm" />
+		<form-bean name="DomainControlForm" type="br.com.alcatellucent.csm.form.DomainControlForm" />
+		<form-bean name="StaticIPControlForm" type="br.com.alcatellucent.csm.form.StaticIPControlForm" />
+		<form-bean name="alertForm" type="br.com.alcatellucent.csm.form.AlertForm" />
+	</form-beans>
+
+	<global-exceptions />
+
+	<global-forwards>
+		<forward name="error" path="/error.jsp" />
+	</global-forwards>
+
+	<action-mappings>
+		<action path="/user" parameter="action"
+			type="br.com.alcatellucent.csm.action.UserAction" name="formUser"
+			input="/user.jsp">
+			<forward name="initial" path="/user.jsp" />
+			<forward name="save" path="/sucessUser.jsp"
+				redirect="false" />
+			<forward name="success" path="/sucessUser.jsp"
+				redirect="false" />
+			<forward name="list" path="/listuser.jsp" redirect="false" />
+			<forward name="view" path="/user.jsp" />
+			<forward name="edit" path="/user.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="outSession" path="/login.jsp"
+				redirect="false" />
+		</action>
+
+		<action path="/alde" parameter="action"
+			type="br.com.alcatellucent.csm.action.AldeAction" name="aldeForm"
+			input="/aldeManegement.jsp">
+			<forward name="initial" path="/aldeManegement.jsp" />
+			<forward name="view" path="/aldeManegement.jsp" />
+			<forward name="list" path="/listAlde.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="record" path="/sucessAlde.jsp"
+				redirect="false" />
+			<forward name="success" path="/sucessAlde.jsp"
+				redirect="false" />
+			<forward name="sucessConnection"
+				path="/sucessConnectionAlde.jsp" redirect="false" />
+			<forward name="failed" path="/error.jsp" />
+			<forward name="outSession" path="/login.jsp"
+				redirect="false" />
+		</action>
+
+		<action path="/aldeMaster" parameter="action"
+			type="br.com.alcatellucent.csm.action.AldeMasterAction"
+			name="aldeForm" input="/aldeMasterEdit.jsp">
+			<forward name="initial" path="/aldeMasterEdit.jsp" />
+			<forward name="edit" path="/aldeMasterEdit.jsp" />
+			<forward name="view" path="/aldeMasterEdit.jsp" />
+			<forward name="back" path="/dashBoard.do?action=initial" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="success" path="/aldeMasterEdit.jsp"
+				redirect="false" />
+			<forward name="failed" path="/error.jsp" />
+			<forward name="outSession" path="/login.jsp"
+				redirect="false" />
+		</action>
+
+		<action path="/device" parameter="action"
+			type="br.com.alcatellucent.csm.action.DeviceAction" name="DeviceForm"
+			input="/device.jsp">
+			<forward name="initial" path="/device.jsp" />
+			<forward name="success" path="/listdevice.jsp"
+				redirect="false" />
+			<forward name="list" path="/listdevice.jsp"
+				redirect="false" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="edit" path="/device.jsp" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="outSession" path="/login.jsp"
+				redirect="false" />
+		</action>
+
+		<action path="/processorPacket" parameter="action"
+			type="br.com.alcatellucent.csm.action.ProcessorPacketAction"
+			name="ProcessorPacketForm" input="/processorPacket.jsp">
+			<forward name="initial" path="/processorPacket.jsp" />
+			<forward name="list" path="/listProcessorPacket.jsp"
+				redirect="false" />
+			<forward name="success" path="/listProcessorPacket.jsp"
+				redirect="false" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="view" path="/processorPacket.jsp" />
+			<forward name="listAcl" path="/listProcessorPacketAcl.jsp" />
+			<forward name="outSession" path="/login.jsp"
+				redirect="false" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+
+		<action path="/profile" parameter="action"
+			type="br.com.alcatellucent.csm.action.UserProfileAction"
+			name="formProfile" input="/profile.jsp">
+			<forward name="success" path="/listprofile.jsp" />
+			<forward name="initial" path="/profile.jsp" />
+			<forward name="list" path="/listprofile.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="outSession" path="/login.jsp"
+				redirect="false" />
+			<forward name="view" path="/profile.jsp" />
+			<forward name="outSession" path="/exit.jsp"
+				redirect="false" />
+		</action>
+
+		<action path="/login" parameter="action"
+			type="br.com.alcatellucent.csm.action.LoginAction" name="LoginForm"
+			input="/login.jsp">
+			<forward name="success" path="/pages/main.jsp" />
+			<forward name="changePassword" path="/changePassword.jsp" />
+			<forward name="errorChange" path="/changePassword.jsp" />
+			<forward name="initial" path="/login.jsp" />
+			<forward name="errorLogin" path="/login.jsp" />
+			<forward name="outSession" path="/login.jsp"
+				redirect="false" />
+		</action>
+
+		<action path="/context" parameter="action"
+			type="br.com.alcatellucent.csm.action.ContextAction"
+			name="ContextForm" input="/context.jsp">
+			<forward name="initial" path="/context.jsp" />
+			<forward name="list" path="/listcontext.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="outSession" path="/login.jsp"
+				redirect="false" />
+			<forward name="view" path="/context.jsp" />
+		</action>
+
+		<action path="/inmon" parameter="action"
+			type="br.com.alcatellucent.csm.action.InMonAction" name="InMonForm"
+			input="/inmon.jsp">
+			<forward name="initial" path="/inmon.jsp" />
+			<forward name="list" path="/listInMon.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="outSession" path="/login.jsp"
+				redirect="false" />
+			<forward name="view" path="/inmon.jsp" />
+			<forward name="common" path="/commonInMon.jsp" />
+			<forward name="conecting" path="/conectInmon.jsp" />
+		</action>
+
+		<action path="/protocol" parameter="action"
+			type="br.com.alcatellucent.csm.action.ProtocolAction"
+			name="ProtocolForm" input="/protocol.jsp">
+			<forward name="initial" path="/protocol.jsp" />
+			<forward name="list" path="/listProtocol.jsp" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+
+		<action path="/port" parameter="action"
+			type="br.com.alcatellucent.csm.action.PortAction" name="PortForm"
+			input="/port.jsp">
+			<forward name="initial" path="/port.jsp" />
+			<forward name="list" path="/listPort.jsp" />
+			<forward name="falid" path="/error.jsp" />
+		</action>
+
+		<action path="/submitLogOut"
+			type="br.com.alcatellucent.csm.action.LogOutAction"
+			name="LoginForm">
+			<forward name="outSession" path="/login.jsp"
+				redirect="false" />
+		</action>
+
+		<action path="/scheduler" parameter="action"
+			type="br.com.alcatellucent.csm.action.SchedulerAction"
+			name="schedulerForm" input="/scheduler.jsp">
+			<forward name="initial" path="/scheduler.jsp" />
+			<forward name="edit" path="/scheduler.jsp" />
+			<forward name="list" path="/schedulerPanel.do?action=list" />
+			<forward name="success" path="/msgTask.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+
+		<action path="/operator" parameter="action"
+			type="br.com.alcatellucent.csm.action.OperatorAction"
+			name="formOperator" input="/operator.jsp">
+			<forward name="initial" path="/operator.jsp" />
+			<forward name="list" path="/listoperator.jsp" />
+			<forward name="success" path="/operator.jsp" />
+			<forward name="view" path="/operator.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+
+		<action path="/aldeAjax" parameter="action"
+			type="br.com.alcatellucent.csm.action.ajax.AldeAjaxAction" />
+
+		<action path="/sessionControl" parameter="action"
+			type="br.com.alcatellucent.csm.action.SessionControlAction" />
+		
+		<action path="/portProtocolGroup" parameter="action"
+			type="br.com.alcatellucent.csm.action.PortProtocolGroupAction"
+			name="PortProtocolGroupForm" input="/portProtocolGroup.jsp">
+			<forward name="initial" path="/portProtocolGroup.jsp" />
+			<forward name="list" path="/listPortProtocolGroup.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="falid" path="/error.jsp" />
+		</action>
+
+		<action path="/trafficPolicy" parameter="action"
+			type="br.com.alcatellucent.csm.action.TrafficPolicyAction"
+			name="TrafficPolicyForm" input="/trafficPolicy.jsp">
+			<forward name="initial" path="/trafficPolicy.jsp" />
+			<forward name="list" path="/listTrafficPolicy.jsp" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="edit" path="/viewTrafficPolicy.jsp" />
+			<forward name="delete" path="/listTrafficPolicy.jsp" />
+			<forward name="success" path="/listTrafficPolicy.jsp" />
+			<forward name="commonTraffic" path="/commonTraffic.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+
+		<action path="/trafficPolicyHistory" parameter="action"
+			type="br.com.alcatellucent.csm.action.TrafficPolicyHistoryAction"
+			name="TrafficPolicyHistoryForm">
+			<forward name="initial" path="/trafficPolicyHistory.jsp" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="view" path="/trafficPolicyHistory.jsp" />
+			<forward name="list" path="/trafficPolicyHistory.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="success" path="/trafficPolicyHistory.jsp" />
+		</action>
+
+		<action path="/AclHistory" parameter="action"
+			type="br.com.alcatellucent.csm.action.AclHistoryAction"
+			name="AclHistoryForm">
+			<forward name="initial" path="/AclHistory.jsp" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="view" path="/AclHistory.jsp" />
+			<forward name="list" path="/AclHistory.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="success" path="/AclHistory.jsp" />
+		</action>
+
+		<action path="/acl" parameter="action"
+			type="br.com.alcatellucent.csm.action.AclAction" name="AclForm"
+			input="/accessControlList.jsp">
+			<forward name="initial" path="/accessControlList.jsp" />
+			<forward name="list" path="/listacl.jsp" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="view" path="/accessControlList.jsp" />
+			<forward name="alert" path="/accessControlList.jsp" />
+			<forward name="successAlert" path="/successACLAlert.jsp"
+				redirect="false" />
+			<forward name="success" path="/successACL.jsp"
+				redirect="false" />
+			<forward name="alert" path="/acl.do?action=alert" />
+			<forward name="refuse" path="/acl.do?action=refuse" />
+			<forward name="close" path="/closeAclAlert.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+
+		<action path="/aclAlert" parameter="action"
+			type="br.com.alcatellucent.csm.action.AclAction" name="AclForm">
+			<forward name="initial" path="/accessControlListAlert.jsp" />
+			<forward name="list" path="/listaclAlert.jsp" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="view" path="/accessControlListAlert.jsp" />
+			<forward name="alert" path="/accessControlListAlert.jsp" />
+			<forward name="success" path="/successACLAlert.jsp"
+				redirect="false" />
+			<forward name="alert" path="/aclAlert.do?action=alert" />
+			<forward name="close" path="/closeAclAlert.jsp" />
+			<forward name="refuse" path="/aclAlert.do?action=refuse" />
+		</action>
+		
+		<action path="/alert" parameter="action"
+			type="br.com.alcatellucent.csm.action.AlertAction" name="alertForm">
+			<forward name="initial" path="/alert.jsp" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="success" path="/successACLAlert.jsp" redirect="false" />
+			<forward name="close" path="/alert.do?action=close" />
+		</action>
+
+		<action path="/logSearch" parameter="action"
+			type="br.com.alcatellucent.csm.logging.action.CsmLogSearchAction"
+			name="CsmLogSearchForm" input="/CsmlogSearch.jsp">
+			<forward name="initial"
+				path="/CsmlogSearch.jsp?action=initial" />
+			<forward name="list" path="/CsmlogSearch.jsp?action=list" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="falid" path="/error.jsp" />
+		</action>
+
+		<action path="/scheduledGroup" parameter="action"
+			type="br.com.alcatellucent.csm.action.ScheduledGroupAction"
+			name="ScheduledGroupForm" input="/scheduledGroup.jsp">
+			<forward name="initial" path="/scheduledGroup.jsp" />
+			<forward name="list" path="/scheduledGroup.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="falid" path="/error.jsp" />
+		</action>
+
+		<action path="/scheduledProtocol" parameter="action"
+			type="br.com.alcatellucent.csm.action.ScheduledProtocolAction"
+			name="ScheduledProtocolForm" input="/scheduledProtocol.jsp">
+			<forward name="initial" path="/scheduledProtocol.jsp" />
+			<forward name="list" path="/scheduledGroup.jsp?action=edit" />
+			<forward name="falid" path="/error.jsp" />
+		</action>
+
+		<action path="/schedulerPanel" parameter="action"
+			type="br.com.alcatellucent.csm.action.SchedulerPanelAction">
+			<forward name="initial" path="/listSchedulerPanel.jsp" />
+			<forward name="list" path="/listSchedulerPanel.jsp" />
+		</action>
+
+		<action path="/choosePolicy" parameter="action"
+			type="br.com.alcatellucent.csm.action.ChoosePolicyAction"
+			name="ChoosePolicyForm">
+			<forward name="initial" path="/choosePolicy.jsp" />
+			<forward name="list" path="/choosePolicy.jsp" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="details"
+				path="/choosePolicyProtocolList.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+			<forward name="save" path="/choosePolicyProtocolList.jsp" />
+		</action>
+
+		<action path="/myAccount" parameter="action"
+			type="br.com.alcatellucent.csm.action.MyAccountAction"
+			name="MyAccount" input="/myaccount.jsp">
+			<forward name="initial" path="/myaccount.jsp" />
+			<forward name="authentication" path="/myaccount.jsp" />
+			<forward name="list" path="/listuser.jsp" redirect="false" />
+			<forward name="errorPassword" path="/myaccount.jsp" />
+			<forward name="successAccount" path="/myaccount.jsp" />
+			<forward name="falid" path="/myaccount.jsp" />
+		</action>
+
+		<action path="/chooseAcl" parameter="action"
+			type="br.com.alcatellucent.csm.action.ChooseAclAction"
+			name="AclForm">
+			<forward name="initial" path="/chooseAcl.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+
+		<action path="/dashBoard" parameter="action"
+			type="br.com.alcatellucent.csm.action.DashBoardAction">
+			<forward name="list" path="/listTrafficDevice.jsp" />
+			<forward name="initial" path="/dashboard.jsp" />
+			<forward name="falid" path="/error.jsp" />
+			<forward name="initial2" path="/devicePolling.jsp" />
+		</action>
+
+		<action path="/passwordSetting" parameter="action"
+			type="br.com.alcatellucent.csm.action.PasswordSettingAction"
+			name="PasswordSettingForm" input="/passwordSetting.jsp">
+			<forward name="initial" path="/passwordSetting.jsp" />
+			<forward name="list" path="/passwordSetting.jsp" />
+			<forward name="view" path="/passwordSetting.jsp" />
+			<forward name="success" path="/passwordSetting.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+
+		<action path="/passRegex" parameter="action"
+			type="br.com.alcatellucent.csm.action.PasswordRegexAction"
+			name="PasswordRegexForm" input="/passRegex.jsp">
+			<forward name="initial" path="/passRegex.jsp" />
+			<forward name="list" path="/listPasswordDictionary.jsp" />
+			<forward name="view" path="/passRegex.jsp" />
+			<forward name="success" path="/passRegex.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+
+		<action path="/Accounting" parameter="action"
+			type="br.com.alcatellucent.csm.action.AccountingAction">
+			<forward name="list" path="/accountList.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+
+		<action path="/domainControl" parameter="action"
+			type="br.com.alcatellucent.csm.action.DomainControlAction"
+			name="DomainControlForm" input="/domainControl.jsp">
+			<forward name="initial" path="/domainControl.jsp" />
+			<forward name="success" path="/domainControl.jsp" />
+			<forward name="list" path="/listDomain.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+
+		<action path="/staticIPControl" parameter="action"
+			type="br.com.alcatellucent.csm.action.StaticIPControlAction"
+			name="StaticIPControlForm" input="/staticIPControl.jsp">
+			<forward name="initial" path="/staticIPControl.jsp" />
+			<forward name="success" path="/staticIPControl.jsp" />
+			<forward name="list" path="/listDomain.jsp" />
+			<forward name="forbidden" path="/accessForbidden.jsp" />
+		</action>
+	</action-mappings>
+<!-- 
+	<controller processorClass="br.com.alcatellucent.csm.struts.CsmRequestProcessor" />
+ -->
+	<message-resources parameter="MessageResources" />
+
+	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames"
+			value="/org/apache/struts/validator/validator-rules.xml,/WEB-INF/validation.xml" />
+	</plug-in>
+
+	<plug-in className="br.com.alcatellucent.csm.struts.CsmPlugin" />
+
+</struts-config>
+

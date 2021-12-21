@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.AclRecipient"
+        table="aclrecipient"
+        lazy="true">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property
+            name="dppmId"
+            type="java.lang.String"
+            column="dppm_id"
+        />
+               
+       <!--  só foi colocado neste, porque só este item era necessário -->
+        <many-to-one 	name="acl" column="acl_id" 
+        				class="br.com.alcatellucent.csm.beans.Acl"/>
+        	
+        <property
+            name="userId"
+            type="java.lang.String"
+            column="user_id" />  
+            
+        <property
+            name="aclNumber"
+            type="java.lang.Integer"
+            column="aclnumber" />    
+
+        <property
+            name="dateApplied"
+            type="timestamp"
+            column="dateapplied" />
+            
+        <property name="applied" type="boolean" column="applied"></property>
+        
+    </class>
+    
+</hibernate-mapping>

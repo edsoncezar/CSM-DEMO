@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+	<class name="br.com.alcatellucent.csm.beans.DeviceManager"
+		table="csmdevicemanager" lazy="false">
+
+		<id name="id" column="csmdevice_id" type="java.lang.String">
+			<generator class="foreign">
+				<param name="property">device</param>
+			</generator>
+		</id>
+
+		<property name="name" type="java.lang.String" update="true"
+			insert="true" column="name" />
+
+		<property name="description" type="java.lang.String"
+			update="true" insert="true" column="description" />
+
+		<property name="host" type="java.lang.String" update="true"
+			insert="true" column="host" />
+
+		<property name="port" type="java.lang.Integer" update="true"
+			insert="true" column="port" />
+
+		<property name="poolPeriod" type="java.lang.Integer"
+			update="true" insert="true" column="poolPeriod" />
+			
+		<property name="lastPoolingTime" type="java.lang.Long"
+			update="true" insert="true" column="LAST_DATE_POLL" />
+			
+		<property name="pollingErrors" type="java.lang.Integer"
+			update="true" insert="true" column="POLL_ERRORS" />			
+			
+		<one-to-one name="device" 
+			class="br.com.alcatellucent.csm.beans.Device" />
+
+	</class>
+</hibernate-mapping>

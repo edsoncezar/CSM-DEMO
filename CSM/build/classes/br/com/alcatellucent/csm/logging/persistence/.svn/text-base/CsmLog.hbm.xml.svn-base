@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.logging.persistence.CsmLog" 
+        table="csmlog">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property	name="userId"
+            		type="java.lang.String"
+            		update="true"
+            		insert="true"
+            		column="user_id"
+        />
+     		  
+		<property 	name="severity"
+					type="java.lang.Integer"
+					update="true"
+					insert="true"
+					column="severity"
+		/>
+		<property 	name="ipClient"
+					type="java.lang.String"
+					insert="true"
+					update="true"
+					column="ip_client"
+		/>
+		
+		<property 	name="ipServer"
+					type="java.lang.String"
+					insert="true"
+					update="true"
+					column="ip_server"  
+		/>
+
+		<property 	name="event"
+					type="java.lang.String"
+					insert="true"
+					update="true"
+					column="event"  
+		/>
+
+		<property 	name="details"
+					type="java.lang.String"
+					insert="true"
+					update="true"
+					column="details"  
+		/>				
+
+		<property 	name="dateEvent"
+					type="java.sql.Date"
+					insert="true"
+					update="true"
+					column="event_date"  
+		/>
+		
+		<property 	name="eventTime"
+					type="timestamp"
+					insert="true"
+					update="true"
+					column="event_time"  
+		/>
+		
+		<property 	name="userName"
+					type="string"
+					insert="true"
+					update="true"
+					column="user_name"  
+		/>
+		
+		<property 	name="user"
+					type="string"
+					insert="true"
+					update="true"
+					column="user"  
+		/>			
+		
+    </class>
+</hibernate-mapping>

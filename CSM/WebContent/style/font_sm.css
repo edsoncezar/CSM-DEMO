@@ -1,0 +1,9 @@
+BODY TD {
+	FONT-SIZE: 0.7em; LINE-HEIGHT: 1.35em
+}
+BODY TH {
+	FONT-SIZE: 0.7em; LINE-HEIGHT: 1.35em
+}
+BODY SELECT {
+	BORDER-RIGHT: #dddddd 1px solid; BORDER-TOP: #dddddd 1px solid; FONT-SIZE: 0.7em; BORDER-LEFT: #dddddd 1px solid; LINE-HEIGHT: 1.35em; BORDER-BOTTOM: #dddddd 1px solid
+}

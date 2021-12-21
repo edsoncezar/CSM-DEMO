@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="br.com.alcatellucent.csm.beans.DeviceDenied"  table="userprofdevicedenied"  lazy="false">
+
+        <id	name="prfid" column="prfid"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+        
+        <property
+            name="csmdeviceId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="csmdevice_id"
+        />   
+
+		<property
+            name="userProfileId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="userprofile_id"
+        />
+		
+    </class>
+</hibernate-mapping>        
+  
+        

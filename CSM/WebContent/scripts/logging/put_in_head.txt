@@ -1,0 +1,22 @@
+<script type="text/javascript" src="html-form-input-mask.js"></script>
+<script type="text/javascript" src="prototype.js"></script>
+
+// Multiple onload function created by: Simon Willison
+// http://simonwillison.net/2004/May/26/addLoadEvent/
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
+
+addLoadEvent(function() {
+  Xaprb.InputMask.setupElementMasks();
+});

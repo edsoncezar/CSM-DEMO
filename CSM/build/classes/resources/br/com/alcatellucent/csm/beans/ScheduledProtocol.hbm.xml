@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.ScheduledProtocol"
+        table="scheduledprotocol">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property	name="name"
+            		type="java.lang.String"
+            		update="true"
+            		insert="true"
+            		column="name"
+        />
+     		  
+		<property 	name="description"
+					type="java.lang.String"
+					update="true"
+					insert="true"
+					column="description"
+		/>
+
+		
+		<property 	name="internalNumber"
+					type="java.lang.Integer"
+					insert="true"
+					update="true"
+					column="internalNumber"  
+		/>
+		
+		
+		<property 	name="aclUsed"
+					type="java.lang.Boolean"
+					insert="true"
+					update="true"
+					column="aclused"  
+		/>
+		
+		<property 	name="isRealTime"
+					type="java.lang.Boolean"
+					insert="true"
+					update="true"
+					column="isRealTime"  
+		/>
+		<!--  Relacionamento com a tabela scheduledTrafficValues -->
+		
+		<one-to-one name="scheduledTrafficValues" class="br.com.alcatellucent.csm.beans.ScheduledTrafficValues" 
+					cascade="save-update" lazy="false"/>
+		
+		<!--  Relacionamento com a tabela de Grupos -->		
+		
+		 <many-to-one  column="scheduledgroup_id" name="scheduledGroup" 
+        			 class="br.com.alcatellucent.csm.beans.ScheduledGroup" lazy="false"/> 
+    </class>
+</hibernate-mapping>

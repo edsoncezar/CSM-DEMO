@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/CSM/!svn/ver/2561/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/comm
+END
+ACLCountProcessorPacket.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/CSM/!svn/ver/2560/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/comm/ACLCountProcessorPacket.java
+END
+DeviceWalkerServletListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/CSM/!svn/ver/2550/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/comm/DeviceWalkerServletListener.java
+END
+DeviceACLCountServletListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/CSM/!svn/ver/2561/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/comm/DeviceACLCountServletListener.java
+END
+DeviceConfigManagerServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/CSM/!svn/ver/2344/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/comm/DeviceConfigManagerServlet.java
+END
+DeviceBasicServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CSM/!svn/ver/2336/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/comm/DeviceBasicServlet.java
+END
+DeviceWalkerServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CSM/!svn/ver/2344/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/comm/DeviceWalkerServlet.java
+END
+DeviceConfigManagerServletListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/CSM/!svn/ver/2550/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/comm/DeviceConfigManagerServletListener.java
+END
+DeviceBasicServletListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/CSM/!svn/ver/2371/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/comm/DeviceBasicServletListener.java
+END
+DeviceACLCountServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/CSM/!svn/ver/2344/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/utils/comm/DeviceACLCountServlet.java
+END

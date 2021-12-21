@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+	<class name="br.com.alcatellucent.csm.beans.Resolver" table="resolver" lazy="true">
+	    <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+		
+		<property 	name="ipAddress" 
+					type="java.lang.String" 
+					update="true"
+					insert="true" 
+					column="ip_address" />
+		
+		<property 	name="isSourceAddress" 
+					type="java.lang.Boolean" 
+					update="true"
+					insert="true" 
+					column="is_source_address" /> 	
+					
+		<many-to-one 	column="domain_id" name="domain" cascade="all" 
+						class="br.com.alcatellucent.csm.beans.Domain" lazy="false"/>
+	
+	</class>
+</hibernate-mapping>

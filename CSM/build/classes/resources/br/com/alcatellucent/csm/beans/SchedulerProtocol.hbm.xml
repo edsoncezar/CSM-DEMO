@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.SchedulerProtocol"
+        table="scheduling_protocol" >
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property	name="protocolId"
+            		type="java.lang.String"
+            		update="true"
+            		insert="true"
+            		column="protocolid"
+        />
+
+	   <property	name="groupSchedulingId"
+            		type="java.lang.String"
+            		update="true"
+            		insert="true"
+            		column="group_scheduling_id"
+        />
+
+	   <property	name="flowsValues"
+            		type="integer"
+            		update="true"
+            		insert="true"
+            		column="flowsvalues"
+        />
+        
+		<property	name="downStreamValue"
+            		type="integer"
+            		update="true"
+            		insert="true"
+            		column="downstreamvalue"
+        />
+
+		<property	name="downStreamUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="downstreamunit"
+        />  
+
+		<property	name="upStreamValue"
+            		type="integer"
+            		update="true"
+            		insert="true"
+            		column="upstreamvalue"
+        /> 
+
+		<property	name="upStreamUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="upstreamunit"
+        />
+        
+		<property	name="outputVlanValue"
+            		type="integer"
+            		update="true"
+            		insert="true"
+            		column="outputvlanvalue"
+        /> 
+
+		<property	name="outputVlanUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="outputvlanunit"
+        />
+
+		<property	name="outputmPlsValue"
+            		type="integer"
+            		update="true"
+            		insert="true"
+            		column="outputmplsvalue"
+        />
+        
+		<property	name="outputmPlsUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="outputmplsunit"
+        />
+    </class>
+</hibernate-mapping>

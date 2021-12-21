@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="br.com.alcatellucent.csm.beans.Domain" table="domain" lazy="true">
+
+		<id name="id" column="id" type="java.lang.String">
+			<generator class="guid"></generator>
+		</id>
+
+		<property 	name="sourceDomain" 
+					type="java.lang.String" 
+					update="true"
+					insert="true" 
+					column="source_domain" />
+					
+		<property 	name="destinationDomain" 
+					type="java.lang.String" 
+					update="true"
+					insert="true" 
+					column="destination_domain" />
+
+		<property 	name="contextId" 
+					type="java.lang.String" 
+					update="true"
+					insert="true" 
+					column="context_id" />
+
+		<property 	name="trafficPolicyId" 
+					type="java.lang.String" 
+					update="true"
+					insert="true" 
+					column="trafficpolicy_id" />
+		
+		<property 	name="anyDestination" 
+					type="java.lang.Boolean" 
+					update="true"
+					insert="true" 
+					column="any_destination" />
+			
+		<property 	name="anySource" 
+					type="java.lang.Boolean" 
+					update="true"
+					insert="true" 
+					column="any_source" />
+					
+								
+		<set name="resolvers" inverse="true" cascade="all-delete-orphan" lazy="false">
+			<key column="domain_id" />
+			<one-to-many class="br.com.alcatellucent.csm.beans.Resolver" />
+		</set>
+
+	</class>
+</hibernate-mapping>

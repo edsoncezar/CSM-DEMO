@@ -1,0 +1,52 @@
+8
+
+dir
+2570
+http://128.251.235.49:3960/svn/CSM/SOFTWARE/WEBCONSOLE/src/org/displaytag/sample/decorators
+http://128.251.235.49:3960/svn/CSM
+
+
+
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8a8b9552-90e1-4f6c-b28b-fcf24afd497c
+
+Wrapper.java
+file
+
+
+
+
+2007-12-06T13:52:19.016171Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+ListObject.java
+file
+
+
+
+
+2007-12-06T13:52:19.016171Z
+d41d8cd98f00b204e9800998ecf8427e
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+

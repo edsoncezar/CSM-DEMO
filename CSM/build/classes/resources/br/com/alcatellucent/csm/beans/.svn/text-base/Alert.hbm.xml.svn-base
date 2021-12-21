@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.Alert"
+        table="alert">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+
+        <property	name="messageType"
+            		type="java.lang.Integer"
+            		update="true"
+            		insert="true"
+            		column="messageType"
+        />
+      		  
+		<property 	name="timeStampMessage"
+					type="java.lang.Long"
+					update="true"
+					insert="true"
+					column="TIMESTAMPMSG"
+		/>
+		<property 	name="rule"
+					type="java.lang.String"
+					insert="true"
+					update="true"
+					column="RULE"  
+		/>
+		<property 	name="sourceIp"
+					type="java.lang.String"
+					insert="true"
+					update="true"
+					column="SOURCEIP"
+		/>
+		<property 	name="destinationIp"
+					type="java.lang.String"
+					insert="true"
+					update="true"
+					column="DESTIP"
+		/>
+		<property 	name="destinationPort"
+					type="java.lang.Integer"
+					insert="true"
+					update="true"
+					column="DESTPORT"
+		/>
+		<property 	name="protocol"
+					type="java.lang.Integer"
+					insert="true"
+					update="true"
+					column="PROTOCOL"
+		/>
+		<property 	name="status"
+					type="java.lang.Integer"
+					insert="true"
+					update="true"
+					column="status"
+		/>
+		<property 	name="attackType"
+					type="java.lang.Integer"
+					insert="true"
+					update="true"
+					column="attackType"
+		/>
+		<property 	name="csmUser"
+					type="java.lang.String"
+					insert="true"
+					update="true"
+					column="csmuser_id"
+		/>
+		<property 	name="alde"
+					type="java.lang.String"
+					insert="true"
+					update="true"
+					column="alde"
+		/>
+		<!-- 		
+		<set name="alde" table="ALERT_has_ALDE"
+			 cascade="save-update,persist" inverse="false" lazy="false">
+			<key column="ALERT_ID"/>
+			<many-to-many class="br.com.alcatellucent.csm.beans.Alde" column="ALDE_ID"/>
+		</set>
+			 -->	
+    </class>
+</hibernate-mapping>

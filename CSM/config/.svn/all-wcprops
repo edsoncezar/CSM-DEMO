@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/CSM/!svn/ver/2355/SOFTWARE/WEBCONSOLE/config
+END
+applicationContext-hibernate2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/CSM/!svn/ver/2355/SOFTWARE/WEBCONSOLE/config/applicationContext-hibernate2.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/config/log4j.properties
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/CSM/!svn/ver/1188/SOFTWARE/WEBCONSOLE/config/build.xml
+END

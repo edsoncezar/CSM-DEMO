@@ -1,0 +1,23 @@
+# --------------------------------------------------
+# Log Configuration for the Prefixo Fds Report System  
+# --------------------------------------------------
+
+# Logging level and appender for logger
+log4j.logger.br.com.alcatellucent.csm=DEBUG, FileAppender, ConsoleAppender
+log4j.logger.org.springframework=ERROR, SpringAppender, ConsoleAppender
+
+
+# Definitions for appender FileAppender
+log4j.appender.FileAppender=org.apache.log4j.RollingFileAppender
+log4j.appender.FileAppender.File=/projetos/CSM/log/csm.log
+log4j.appender.FileAppender.MaxFileSize=5MB
+log4j.appender.FileAppender.MaxBackupIndex=20
+log4j.appender.FileAppender.Append=true
+log4j.appender.FileAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.FileAppender.layout.ConversionPattern=%d|%-6p|%t|%x|%C{1}.%M():%L|%m%n
+
+
+# Definitions for appender ConsoleAppender
+log4j.appender.ConsoleAppender=org.apache.log4j.ConsoleAppender
+log4j.appender.ConsoleAppender.layout=org.apache.log4j.PatternLayout
+log4j.appender.ConsoleAppender.layout.ConversionPattern=%d|%-6p|%t|%x|%C{1}.%M():%L|%m%n

@@ -1,0 +1,16 @@
+textarea {
+	background-color: #EBEBEB;
+	border: 1px dotted;
+	scrollbar-base-color: White;
+	scrollbar-arrow-color: Black;
+	scrollbar-DarkShadow-Color: #8F8F8F;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 450px;
+	height: 200px;
+}
+body {
+	font-family: Arial;
+	font-size: 11px;
+	background-color: White;
+}

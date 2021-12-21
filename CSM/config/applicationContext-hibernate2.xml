@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+   <!-- Database Property -->
+   <bean id="hibernateProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+      <property name="properties">
+         <props>
+         	<prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+            <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+
+            <!-- Local Configuration 
+            	<prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/agyadb</prop>
+            	<prop key="hibernate.connection.username">root</prop>
+            	<prop key="hibernate.connection.password">admin</prop>
+            -->
+            <!-- Lab Configuration  -->
+            <prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/agyadb</prop>
+            <prop key="hibernate.connection.username">root<!--csmadmin--></prop>
+            <prop key="hibernate.connection.password">root<!--lab123--></prop>
+            
+            <prop key="hibernate.show_sql">false</prop>
+            <prop key="hibernate.format_sql">true</prop>            
+            <prop key="hibernate.cglib.use_reflection_optimizer">false</prop>
+            <prop key="hibernate.c3p0.acquire_increment">1</prop>
+            <prop key="hibernate.c3p0.min_size">5</prop>
+            <prop key="hibernate.c3p0.max_size">20</prop>
+            <prop key="hibernate.c3p0.max_statements">50</prop>
+				
+				<prop key="hibernate.c3p0.timeout">180</prop>
+				<prop key="hibernate.c3p0.maxIdleTime">200</prop>
+				<prop key="hibernate.c3p0.idle_test_period">100</prop>
+           <!--
+            <prop key="hibernate.c3p0.idle_test_period">4800</prop>
+            <prop key="hibernate.c3p0.timeout">7200</prop>
+            -->
+           
+ <!--         
+            <prop key="hibernate.c3p0.min_size">5</prop>
+            <prop key="hibernate.c3p0.max_size">20</prop>
+            <prop key="hibernate.c3p0.minPoolSize">5</prop>
+            <prop key="hibernate.c3p0.maxPoolSize">20</prop>
+            <prop key="hibernate.c3p0.timeout">5000</prop>
+            <prop key="hibernate.c3p0.max_statement">50</prop>
+            <prop key="hibernate.c3p0.testConnectionOnCheckout">false</prop>
+ -->
+          </props>
+      </property>
+   </bean>  
+		  <!--
+   
+  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">  
+	    <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+	    
+		<property name="url" value="jdbc:mysql://128.251.233.152:3306/agyadb"/>
+		<property name="username" value="csmadmin"/>
+		<property name="password" value="lab123"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/agyadb"/>
+		<property name="username" value="root"/>
+		<property name="password" value="admin"/>
+  </bean>
+		  -->
+  
+  <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+<!-- <property name="dataSource" ref="dataSource"/> -->    
+    <property name="hibernateProperties">
+		<ref bean="hibernateProperties" />
+    </property>
+    <property name="mappingResources">
+      <list>	
+		<value>resources\br\com\alcatellucent\csm\beans\User.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\Context.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\Contact.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\Role.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\Device.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\DeviceManager.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\ProcessorPacket.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\DeviceDenied.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\UserProfile.hbm.xml</value>
+      <value>resources\br\com\alcatellucent\csm\beans\Alde.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\AldeConfig.hbm.xml</value>  
+		<value>resources\br\com\alcatellucent\csm\beans\Control.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\Protocol.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\Port.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\PortProtocolGroup.hbm.xml</value> 
+		<value>resources\br\com\alcatellucent\csm\beans\TraficValues.hbm.xml</value> 	
+		<value>resources\br\com\alcatellucent\csm\beans\GroupTrafficPolicy.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\Operator.hbm.xml</value> 
+		<value>resources\br\com\alcatellucent\csm\beans\Alert.hbm.xml</value> 
+		<value>resources\br\com\alcatellucent\csm\beans\TrafficPolicy.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\InMon.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\Acl.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\SchedulerProtocol.hbm.xml</value>		
+		<value>resources\br\com\alcatellucent\csm\beans\Scheduling.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\ScheduledProtocol.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\ScheduledGroup.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\ScheduledTrafficValues.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\TrafficPolicyHistory.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\AclHistory.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\PoolingHistory.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\Domain.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\Resolver.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\StaticIP.hbm.xml</value>
+		<!--  hbm.xml  Log -->
+		<value>br\com\alcatellucent\csm\logging\persistence\CsmLog.hbm.xml</value>
+		<!--  hbm.xml  Quartz   -->
+		<value>resources\br\com\alcatellucent\csm\quartz\beans\JobDetails.hbm.xml</value>   
+		<value>resources\br\com\alcatellucent\csm\quartz\beans\Triggers.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\quartz\beans\CronTriggers.hbm.xml</value>	
+		<value>resources\br\com\alcatellucent\csm\quartz\beans\FiredTriggers.hbm.xml</value>	
+		<!--  hbm.xml  Password Policies   -->
+		<value>resources\br\com\alcatellucent\csm\beans\PassSettings.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\PassRegex.hbm.xml</value>
+		<value>resources\br\com\alcatellucent\csm\beans\PassHistory.hbm.xml</value>
+ 		<value>resources\br\com\alcatellucent\csm\beans\Accounting.hbm.xml</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="userDao" 	class="br.com.alcatellucent.csm.persistence.hibernate.HbUserDAO"/> 
+  <bean id="contextDao" class="br.com.alcatellucent.csm.persistence.hibernate.HbContextDAO"/>
+  <!--bean id="commonDao"  class="br.com.alcatellucent.csm.persistence.hibernate.HbCommonDAO"/-->
+
+</beans>  

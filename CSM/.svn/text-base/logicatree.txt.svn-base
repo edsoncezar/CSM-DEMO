@@ -1,0 +1,42 @@
+
+
+
+
+
+
+1010
+      1020
+           1023
+           1024
+           1025    
+      1030  
+           1031   
+           1032 
+           1033
+           1034
+
+
+
+Map = Array()
+
+String context = "do root";
+int indiceATUAL = 0;
+while( TRUE )
+    select * from context where parentid=context
+    indice =  indiceATUAL 
+    while( context ){
+	map[indice] =  1020 ... 1030
+        indice = indice + 1
+    }
+
+    
+    context = map.get(indice)   
+
+    indiceATUAL = indiceATUAL + 1	
+}
+
+
+
+
+
+       

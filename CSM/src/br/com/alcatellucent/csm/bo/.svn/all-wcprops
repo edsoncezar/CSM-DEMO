@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/CSM/!svn/ver/2567/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo
+END
+SchedulerBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CSM/!svn/ver/2367/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/SchedulerBO.java
+END
+UserBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/UserBO.java
+END
+TrafficPolicyHistoryBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/TrafficPolicyHistoryBO.java
+END
+AclHistoryBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CSM/!svn/ver/1901/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/AclHistoryBO.java
+END
+PortBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CSM/!svn/ver/1801/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/PortBO.java
+END
+PassHistoryBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CSM/!svn/ver/1981/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/PassHistoryBO.java
+END
+PoolingHistoryBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/PoolingHistoryBO.java
+END
+AccountingBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CSM/!svn/ver/1971/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/AccountingBO.java
+END
+OperatorBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CSM/!svn/ver/1801/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/OperatorBO.java
+END
+ContactBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CSM/!svn/ver/1801/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/ContactBO.java
+END
+TrafficPolicyBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/TrafficPolicyBO.java
+END
+UserProfileBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CSM/!svn/ver/2274/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/UserProfileBO.java
+END
+AclHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CSM/!svn/ver/2471/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/AclHistory.java
+END
+RoleBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/RoleBO.java
+END
+UserAccessControlBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CSM/!svn/ver/2567/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/UserAccessControlBO.java
+END
+ResolverBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CSM/!svn/ver/1960/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/ResolverBO.java
+END
+PassRegexBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CSM/!svn/ver/1829/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/PassRegexBO.java
+END
+AclRecipientBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CSM/!svn/ver/2557/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/AclRecipientBO.java
+END
+AldeBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/CSM/!svn/ver/2467/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/AldeBO.java
+END
+DomainBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/DomainBO.java
+END
+DashBoardChartBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CSM/!svn/ver/2537/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/DashBoardChartBO.java
+END
+ScheduledGroupBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/CSM/!svn/ver/1801/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/ScheduledGroupBO.java
+END
+InMonBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CSM/!svn/ver/1801/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/InMonBO.java
+END
+StaticIPBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/StaticIPBO.java
+END
+ScheduledProtocolBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CSM/!svn/ver/1910/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/ScheduledProtocolBO.java
+END
+PortProtocolGroupBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CSM/!svn/ver/1801/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/PortProtocolGroupBO.java
+END
+ContextBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/ContextBO.java
+END
+SchedulingBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/SchedulingBO.java
+END
+QuartzBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CSM/!svn/ver/1801/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/QuartzBO.java
+END
+PassSettingsBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CSM/!svn/ver/2188/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/PassSettingsBO.java
+END
+DeviceManagerBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/CSM/!svn/ver/1801/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/DeviceManagerBO.java
+END
+AclBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/CSM/!svn/ver/2559/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/AclBO.java
+END
+DeviceBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/DeviceBO.java
+END
+ProtocolBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/ProtocolBO.java
+END
+ProcessorPacketBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/CSM/!svn/ver/2518/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/ProcessorPacketBO.java
+END
+AlertBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/CSM/!svn/ver/2552/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/AlertBO.java
+END
+DeviceDeniedBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/CSM/!svn/ver/1845/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/DeviceDeniedBO.java
+END
+GroupTrafficPolicyBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/CSM/!svn/ver/1801/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/bo/GroupTrafficPolicyBO.java
+END

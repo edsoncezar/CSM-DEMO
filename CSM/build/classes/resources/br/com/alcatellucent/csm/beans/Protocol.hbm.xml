@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.Protocol"
+        table="protocol">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property	name="name"
+            		type="java.lang.String"
+            		update="true"
+            		insert="true"
+            		column="name"
+        />
+     		  
+		<property 	name="description"
+					type="java.lang.String"
+					update="true"
+					insert="true"
+					column="description"
+		/>
+		
+		<property 	name="internalNumber"
+					type="java.lang.Integer"
+					insert="true"
+					update="true"
+					column="internalNumber"  
+		/>
+		
+		<property 	name="aclUsed"
+					type="java.lang.Boolean"
+					insert="true"
+					update="true"
+					column="aclused"  
+		/>
+		
+		<property 	name="isRealTime"
+					type="java.lang.Boolean"
+					insert="true"
+					update="true"
+					column="isrealtime"  
+		/>
+		
+		<!-- traffic values properties -->
+		
+		 <property	name="flowsValues"
+            		type="integer"
+            		update="true"
+            		insert="true"
+            		column="flowsValues"
+        />
+        
+		<property	name="downStreamValue"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="downStreamValue"
+        />
+
+		<property	name="downStreamUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="downStreamUnit"
+        />  
+
+		<property	name="upStreamValue"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="upStreamValue"
+        /> 
+
+		<property	name="upStreamUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="upStreamUnit"
+        />
+        
+		<property	name="control"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="control"
+        />
+        
+		<property	name="controlUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="control_unit"
+        />        
+        
+		<property	name="priority"
+            		type="integer"
+            		update="true"
+            		insert="true"
+            		column="priority"
+        />        
+        
+        <!-- end of traffic values properties  -->
+		
+		
+		<!--  Relacionamento com a tabela de Grupos -->		
+		
+		<set name="portProtocolGroups" table="portprotocolgroup_has_protocol" >
+			<key column="PORTPROTOCOLGROUP_id" ></key>
+			<many-to-many class="br.com.alcatellucent.csm.beans.PortProtocolGroup" column="id"/>
+		</set> 
+    </class>
+</hibernate-mapping>

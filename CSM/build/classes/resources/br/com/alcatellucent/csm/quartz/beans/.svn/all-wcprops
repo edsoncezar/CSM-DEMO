@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/CSM/!svn/ver/546/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/quartz/beans
+END
+FiredTriggers.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/CSM/!svn/ver/175/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/quartz/beans/FiredTriggers.hbm.xml
+END
+JobDetails.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/CSM/!svn/ver/518/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/quartz/beans/JobDetails.hbm.xml
+END
+Triggers.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/CSM/!svn/ver/175/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/quartz/beans/Triggers.hbm.xml
+END
+CronTriggers.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/CSM/!svn/ver/546/SOFTWARE/WEBCONSOLE/src/resources/br/com/alcatellucent/csm/quartz/beans/CronTriggers.hbm.xml
+END

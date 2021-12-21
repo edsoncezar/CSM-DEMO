@@ -1,0 +1,48 @@
+.belllabs {
+	
+}
+.belllabs .row2 .col1 {
+	WIDTH: 598px
+}
+.belllabs .row2 .col2 {
+	PADDING-LEFT: 10px; WIDTH: 152px
+}
+.home {
+	
+}
+.home .row2 .col1 {
+	WIDTH: 294px
+}
+.home .row2 .col2 {
+	WIDTH: 294px
+}
+.home .row2 .col3 {
+	WIDTH: 152px
+}
+.alternate2col {
+	
+}
+.alternate2col .row1 .col1 {
+	WIDTH: 456px
+}
+.alternate2col .row1 .col2 {
+	PADDING-LEFT: 10px; WIDTH: 294px
+}
+.standard3col .row3 .col1 {
+	WIDTH: 294px
+}
+.standard3col .row3 .col2 {
+	PADDING-LEFT: 10px; WIDTH: 294px
+}
+.standard3col .row3 .col3 {
+	PADDING-LEFT: 10px; WIDTH: 152px
+}
+.standard2col {
+	
+}
+.standard2col .row1 .col1 {
+	WIDTH: 598px
+}
+.standard2col .row1 .col2 {
+	PADDING-LEFT: 10px; WIDTH: 152px
+}

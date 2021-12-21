@@ -1,0 +1,14 @@
+<form action="" method="get">
+  <table>
+  <tr>
+    <td>Date (US format):</td>
+    <td><input id="input_date" type="text" class="text input_mask mask_date_us"></td>
+  </tr><tr>
+    <td>Time:</td>
+    <td><input id="input_time" type="text" class="text input_mask mask_time"></td>
+  </tr><tr>
+    <td>Phone number:</td>
+    <td><input id="input_phone" type="text" class="text input_mask mask_phone"></td>
+  </tr>
+  </table>
+</form>

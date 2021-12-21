@@ -1,0 +1,54 @@
+8
+
+dir
+2570
+http://128.251.235.49:3960/svn/CSM/SOFTWARE/WEBCONSOLE/images
+http://128.251.235.49:3960/svn/CSM
+
+
+
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8a8b9552-90e1-4f6c-b28b-fcf24afd497c
+
+breadcrumbs.png
+file
+
+
+
+
+2007-12-06T13:52:21.532633Z
+4aacb4de0e94bd486e66192c5e9c6ccd
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+has-props
+
+list.png
+file
+
+
+
+
+2007-12-06T13:52:21.532633Z
+bde5cb247e7ca60bc521ceeaf8749a84
+2007-08-14T13:19:58.016606Z
+13
+svnadmin
+has-props
+

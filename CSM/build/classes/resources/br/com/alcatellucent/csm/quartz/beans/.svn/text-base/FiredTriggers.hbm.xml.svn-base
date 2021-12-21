@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.quartz.beans.FiredTriggers"
+        table="QRTZ_FIRED_TRIGGERS"
+        lazy="false">
+        
+        
+
+     <id	name="entryId" column="ENTRY_ID"  type="java.lang.String" >
+          <generator class="native"></generator> 
+     </id>            
+      
+
+     <property
+            name="triggerName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="TRIGGER_NAME"
+      />
+
+     <property
+            name="triggerGroup"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+             column="TRIGGER_GROUP"
+      />
+
+
+     <property
+            name="isVolatile"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="IS_VOLATILE"
+      />
+
+     <property
+            name="instanceName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="INSTANCE_NAME"
+      />
+
+     <property
+            name="firedTime"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="FIRED_TIME"
+      />
+
+      <property
+            name="priority"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="priority"
+      />
+
+      <property
+            name="State"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="state"
+      />
+
+      <property
+            name="jobName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="JOB_NAME"
+        />
+
+
+       <property
+            name="jobGroup"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="JOB_GROUP"
+       />
+
+
+       <property
+            name="isStateful"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="IS_STATEFUL"
+       />
+ 
+
+       <property
+            name="requestsRecovery"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="REQUESTS_RECOVERY"
+       />
+
+    </class>
+</hibernate-mapping>	

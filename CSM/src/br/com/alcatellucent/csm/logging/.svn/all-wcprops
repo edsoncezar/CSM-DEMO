@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/CSM/!svn/ver/2459/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/logging
+END
+CsmLogSeverity.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/CSM/!svn/ver/1606/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/logging/CsmLogSeverity.java
+END
+ICsmLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CSM/!svn/ver/446/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/logging/ICsmLog.java
+END

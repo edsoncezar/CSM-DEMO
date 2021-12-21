@@ -1,0 +1,40 @@
+8
+
+dir
+2570
+http://128.251.235.49:3960/svn/CSM/SOFTWARE/WEBCONSOLE/WebContent/logging
+http://128.251.235.49:3960/svn/CSM
+
+
+
+2007-08-29T21:25:23.648772Z
+504
+svnadmin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8a8b9552-90e1-4f6c-b28b-fcf24afd497c
+
+screen_logging.html
+file
+
+
+
+
+2007-12-06T13:54:05.614780Z
+151ee6bbd51424347e0fbcd20616ce43
+2007-08-29T12:15:05.009962Z
+452
+svnadmin
+

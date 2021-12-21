@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.ScheduledTrafficValues" table="scheduledtrafficvalues">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="foreign">
+             	<param name="property">scheduledProtocol</param>
+              </generator> 
+        </id>
+       
+        <property	name="flowsValues"
+            		type="integer"
+            		update="true"
+            		insert="true"
+            		column="flowsValues"
+        />
+
+		<property	name="downStreamValue"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="downStreamValue"
+        />
+
+		<property	name="downStreamUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="downStreamUnit"
+        />  
+
+		<property	name="upStreamValue"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="upStreamValue"
+        /> 
+
+		<property	name="upStreamUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="upStreamUnit"
+        />
+        
+		<property	name="outputVlanValue"
+            		type="integer"
+            		update="true"
+            		insert="true"
+            		column="outputVlanValue"
+        /> 
+
+		<property	name="outputVlanUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="outputVlanUnit"
+        />
+
+		<property	name="outputmPlsValue"
+            		type="integer"
+            		update="true"
+            		insert="true"
+            		column="outputmPlsValue"
+        />
+        
+		<property	name="outputmPlsUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="outputmPlsUnit"
+        />
+        
+		<property	name="control"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="control"
+        />      
+        
+		<property	name="controlUnit"
+            		type="string"
+            		update="true"
+            		insert="true"
+            		column="control_unit"
+        />            
+
+		<property	name="priority"
+            		type="integer"
+            		update="true"
+            		insert="true"
+            		column="priority"
+        />        
+        
+        <!-- Para cada tabela que utilizar a ScheduledTrafficValues -->
+       <one-to-one	name="scheduledProtocol" 
+        			class="br.com.alcatellucent.csm.beans.ScheduledProtocol" 
+        			cascade="none" constrained="true" />
+         			                        
+    </class>
+</hibernate-mapping>

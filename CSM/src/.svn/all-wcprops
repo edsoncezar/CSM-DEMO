@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/CSM/!svn/ver/2568/SOFTWARE/WEBCONSOLE/src
+END
+CsmLog.properties
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CSM/!svn/ver/1903/SOFTWARE/WEBCONSOLE/src/CsmLog.properties
+END
+agya_version.properties
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CSM/!svn/ver/2515/SOFTWARE/WEBCONSOLE/src/agya_version.properties
+END
+quartz.properties
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CSM/!svn/ver/2354/SOFTWARE/WEBCONSOLE/src/quartz.properties
+END
+MessageResources.properties
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/CSM/!svn/ver/2565/SOFTWARE/WEBCONSOLE/src/MessageResources.properties
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/CSM/!svn/ver/2523/SOFTWARE/WEBCONSOLE/src/log4j.properties
+END
+hibernate.cfg.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/CSM/!svn/ver/2562/SOFTWARE/WEBCONSOLE/src/hibernate.cfg.xml
+END

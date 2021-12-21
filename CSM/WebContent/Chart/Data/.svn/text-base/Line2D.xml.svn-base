@@ -1,0 +1,19 @@
+<chart caption='DDOS ATTACKS' subcaption='For the year 2007' xAxisName='Month' yAxisName='alert' yAxisMinValue='0'  numberPrefix='' showValues='0' alternateHGridColor='FCB541' alternateHGridAlpha='20' divLineColor='FCB541' divLineAlpha='50' canvasBorderColor='666666' baseFontColor='666666' lineColor='FCB541'>
+	<set label='Jan' value='17' />
+	<set label='Feb' value='198' />
+	<set label='Mar' value='218' />
+
+	<styles>
+		<definition>
+			<style name='Anim1' type='animation' param='_xscale' start='0' duration='1' />
+			<style name='Anim2' type='animation' param='_alpha' start='0' duration='0.6' />
+
+		</definition>
+		<application>
+			<apply toObject='DIVLINES' styles='Anim1' />
+			<apply toObject='HGRID' styles='Anim2' />
+			<apply toObject='DATALABELS' styles='DataShadow,Anim2' />
+	</application>	
+	</styles>
+
+</chart> 

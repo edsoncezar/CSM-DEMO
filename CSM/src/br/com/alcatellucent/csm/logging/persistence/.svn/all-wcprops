@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/CSM/!svn/ver/2201/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/logging/persistence
+END
+CsmLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/CSM/!svn/ver/2201/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/logging/persistence/CsmLog.java
+END
+CsmLogBO.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/CSM/!svn/ver/1802/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/logging/persistence/CsmLogBO.java
+END
+CsmLog.hbm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/CSM/!svn/ver/2201/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/logging/persistence/CsmLog.hbm.xml
+END
+CSMLogging.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/CSM/!svn/ver/2201/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/logging/persistence/CSMLogging.java
+END

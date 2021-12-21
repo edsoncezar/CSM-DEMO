@@ -1,0 +1,121 @@
+table {
+	border: 1px solid #666;
+	width: 90%;
+	margin: 20px 0 20px 0 !important;
+}
+
+th,td {
+	padding: 2px 4px 2px 4px !important;
+	text-align: left;
+	vertical-align: top;
+}
+
+thead tr {
+	background-color: #CCCCFF;
+	border-bottom: solid 1px silver;
+	color: #004D99;
+	font-weight: bold;
+	padding-left: 5px; 
+}
+
+th.sorted {
+	background-color: #EDE5FF;
+}
+
+th a,th a:visited {
+	color: black;
+}
+
+th a:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+th.sorted a,th.sortable a {
+	background-position: right;
+	display: block;
+	width: 100%;
+}
+
+th.sortable a {
+	background-image: url(../img/arrow_off.png);
+	background-repeat: no-repeat;
+}
+
+th.order1 a {
+	background-image: url(../img/arrow_down.png);
+	background-repeat: no-repeat;
+}
+
+th.order2 a {
+	background-image: url(../img/arrow_up.png);
+	background-repeat: no-repeat;
+}
+
+tr.odd {
+	background-color: #fff
+}
+
+tr.tableRowEven,tr.even {
+	background-color: #E5EBFF;
+}
+
+div.exportlinks {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	margin: 2px 0 10px 0;
+	width: 89%;
+}
+
+span.export {
+	padding: 0 4px 1px 20px;
+	display: inline;
+	display: inline-block;
+	cursor: pointer;
+}
+
+span.excel {
+	background-image: url(../img/ico_file_excel.png);
+	background-repeat: no-repeat;
+}
+
+span.csv {
+	background-image: url(../img/ico_file_csv.png);
+	background-repeat: no-repeat;
+}
+
+span.xml {
+	background-image: url(../img/ico_file_xml.png);
+	background-repeat: no-repeat;
+}
+
+span.pdf {
+	background-image: url(../img/ico_file_pdf.png);
+	background-repeat: no-repeat;
+}
+
+span.rtf {
+	background-image: url(../img/ico_file_rtf.png);
+	background-repeat: no-repeat;
+}
+
+span.pagebanner {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	width: 89%;
+	margin-top: 10px;
+	display: block;
+	border-bottom: none;
+}
+
+span.pagelinks {
+	background-color: #eee;
+	border: 1px dotted #999;
+	padding: 2px 4px 2px 4px;
+	width: 89%;
+	display: block;
+	border-top: none;
+	margin-bottom: -5px;
+}

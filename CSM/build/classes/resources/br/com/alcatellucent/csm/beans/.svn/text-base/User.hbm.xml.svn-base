@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.User"
+        table="csmuser"
+        lazy="false">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+       
+        <property
+            name="name"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="name"
+        />
+        
+        
+        <property
+            name="description"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="description"
+        />
+        
+
+          <property
+            name="contextId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="context_id"
+        />
+    
+        <property
+            name="userName"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="csmusername"
+        />
+    
+    	<property
+            name="userProfileId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="userProfileId" />    
+        
+        
+        <property
+            name="createdBy"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="createdby"
+        />  
+        
+        <property
+            name="lastLogin"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="lastLogin"
+        />    
+   
+  	  <property
+            name="createdAt"
+            type="java.util.Date"
+            update="true"
+            insert="true"
+            column="createdat"
+        />    
+        
+        <property
+            name="isActive"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+            column="fl_active"
+        /> 
+        
+
+    </class>
+</hibernate-mapping>

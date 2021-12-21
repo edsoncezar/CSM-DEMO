@@ -1,0 +1,61 @@
+8
+
+dir
+2570
+http://128.251.235.49:3960/svn/CSM/SOFTWARE/WEBCONSOLE/src/br/com/alcatellucent/csm/logging
+http://128.251.235.49:3960/svn/CSM
+
+
+
+2007-11-28T19:03:13.288710Z
+2459
+igor
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8a8b9552-90e1-4f6c-b28b-fcf24afd497c
+
+CsmLogSeverity.java
+file
+
+
+
+
+2007-12-06T13:52:12.717200Z
+f14c1209ab5108de54fe5cb21771a473
+2007-10-01T21:07:49.295550Z
+1606
+igor
+
+form
+dir
+
+persistence
+dir
+
+action
+dir
+
+ICsmLog.java
+file
+
+
+
+
+2007-12-06T13:52:12.717200Z
+724253b95a320dabfea8631598c40722
+2007-08-29T12:07:48.536303Z
+446
+svnadmin
+

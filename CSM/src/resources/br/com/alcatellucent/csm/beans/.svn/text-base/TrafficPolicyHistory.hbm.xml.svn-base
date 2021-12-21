@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+
+
+<hibernate-mapping>
+    <class
+        name="br.com.alcatellucent.csm.beans.TrafficPolicyHistory"
+        table="trafficpolicyhistory"
+        lazy="false">
+
+        <id	name="id" column="id"  type="java.lang.String" >
+              <generator class="guid"></generator> 
+        </id>
+        
+        <property   
+           name="trafficPolicyId"
+		   type="java.lang.String"
+		   update="true"
+		   insert="true"
+		   column="trafficPolicy_id"
+		 />
+       
+        <property
+            name="dppmId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="dppm_id"
+        />
+        
+         <property
+            name="csmUserId"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="csmuser_id"
+         />
+        
+        <property
+            name="date"
+            type="java.util.Calendar"
+            update="true"
+            insert="true"
+            column="date_time"
+        />
+        
+        <property
+            name="statusApplied"
+            type="java.lang.Boolean"
+            update="true"
+            insert="true"
+            column="status_applied"
+        />
+        
+        <property
+            name="mode"
+            type="java.lang.Integer"
+            update="true"
+            insert="true"
+            column="mode"
+        />
+        
+         <property
+            name="details"
+            type="java.lang.String"
+            update="true"
+            insert="true"
+            column="details"
+         />
+
+    </class>
+</hibernate-mapping>

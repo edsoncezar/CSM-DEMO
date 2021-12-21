@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld
+END
+sql.tld
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/sql.tld
+END
+sql-1_0-rt.tld
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/sql-1_0-rt.tld
+END
+c-1_0.tld
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/c-1_0.tld
+END
+permittedTaglibs.tld
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/permittedTaglibs.tld
+END
+fn.tld
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/fn.tld
+END
+fmt-1_0.tld
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/fmt-1_0.tld
+END
+scriptfree.tld
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/scriptfree.tld
+END
+x.tld
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/x.tld
+END
+x-1_0-rt.tld
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/x-1_0-rt.tld
+END
+sql-1_0.tld
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/sql-1_0.tld
+END
+c.tld
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/c.tld
+END
+c-1_0-rt.tld
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/c-1_0-rt.tld
+END
+x-1_0.tld
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/x-1_0.tld
+END
+fmt.tld
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/fmt.tld
+END
+fmt-1_0-rt.tld
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/CSM/!svn/ver/13/SOFTWARE/WEBCONSOLE/WebContent/tld/fmt-1_0-rt.tld
+END
